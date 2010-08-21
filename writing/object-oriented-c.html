@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Writing</title>
+  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+</head>
+<body>
+    <h2>Object-Oriented Programming in C</h2>
+<p><i>written by <a href="/">Trevis Rothwell</a> (in 2006)</i></p>
+<p><a href="/">Home</a> : <a href="/writing/">Writing</a> : One Article</p>
+
+<hr>
+
+<a href="http://picasaweb.google.com/lh/photo/uX7jQ7oPWMqG4lXM4U9uSA?feat=embedwebsite"><img src="http://lh3.ggpht.com/_IsIl4HvOgJw/R3cafw_08qI/AAAAAAAABWk/qk3awc8Y6qo/s288/IMG_0237.jpg" align="right" class="photo" /></a>
+
+<h3><a name="intro">Introduction</a></h3>
+
+<p>
+I find myself converting old Ada software to C (for business, not pleasure), and
+many memories of my times spent with C have resurfaced.  I'm a bit wiser now, as Lisp
+makes a software engineer wise, and thought that I should take some time to jot
+down some basic ideas about building object-oriented software using C.  Whether if you
+are building new C software from scratch, or rebuilding some old software afresh in
+C, I hope that this little guide will prove beneficial for you.  I will continue to
+add to it as I think of things to add.  Comments and corrections are welcome
+via email.
+</p>
+
+<h3><a name="objects">Objects and Classes</a></h3>
+
+<p>
+C is not an object-oriented language.  You might rightly wonder, then, how can we
+build object-oriented software using C?  The best answer to this question is, of
+course, is that you should use C++ or Java or some other language better suited to
+the problem you need to solve, but this is not always an option.
+</p>
+
+<p>
+Since C has no built-in support for objects, we will have to make do with what it
+<i>does</i> offer.  The closest thing to the C++ <tt>class</tt> that we have in
+C is a structure.  Here's an example of one:
+</p>
+
+<pre>
+struct cameraShot
+{
+  int filmSpeed;
+  int focalLength;
+  float aperture;
+  float shutterSpeed;
+  char description[100];
+};
+</pre>
+
+<p>
+This defines a new type called <tt>struct cameraShot</tt>, and is kind of like
+a class.  We can now make new variables that are "instances" of this type, and
+are kind of like objects:
+</p>
+
+<pre>
+struct cameraShot petLlamaInHelicopter =
+  {400, 135, 2.8, 0.01, "My pet llama on board a helicopter."};
+
+struct cameraShot petLlamaSurfing = 
+  {800, 300, 2.8, 0.01, "My pet llama surfing in southern California."};
+</pre>
+
+<p>
+We can easily write functions that operate on these objects.  We can't declare
+the function <i>inside of</i> the structure, so we have to pass a pointer to
+an instance of the structure as a parameter to the functions:
+</p>
+
+<pre>
+int getFilmSpeed (struct cameraShot *cs)
+{
+  return cs->filmSpeed;
+}
+</pre>
+
+<p>
+That wasn't really <i>that</i> bad, was it?  Let's take a look at a few more:
+</p>
+
+<pre>
+void setFilmSpeed (struct cameraShot *cs, int filmSpeed)
+{
+  cs->filmSpeed = filmSpeed;
+}
+</pre>
+
+<pre>
+void setDescription (struct cameraShot *cs, char *description)
+{
+  strcpy (cs->description, description);
+}
+</pre>
+
+<p>
+It's a little bit messier than C++, but not a lot.  The big problem you 
+are likely to run into is with the function names.  In C++, a function
+like <tt>setFilmSpeed</tt> would be hidden inside the class definition,
+tucked away into its own little namespace.  In C, it's a global function
+declaration that potentially could be seen by the rest of the program.  You
+can't have more than one function named <tt>setFilmSpeed</tt>, so you'll
+probably want to be a little more clever with your naming conventions to
+ensure that you won't trample on a fellow programmer's identifiers, nor
+he on yours.
+</p>
+
+<h3><a name="generic">Generic Programming</a></h3>
+
+<p>
+C is not a very good language for generic (a.k.a., template) programming.  If
+you're familiar with templates in C++ or generics in Java or Ada, or if you've
+simply been coding in Lisp your whole life and don't think much about types at
+all, then you might find yourself stumped at how to perform some of your cool
+coding techniques in C.
+</p>
+
+<p>
+The traditional way in which C pretends to offer generic programming is through
+void pointers.
+A void pointer can be used to point to any kind of data object C.  That's the
+good news.  The bad news is that in order to really use the data object, you
+still have to know the type of the object.  There are some limited things you
+can do with the data without knowing its type, but somewhere down the line,
+unless you're just moving raw data around, you're going to have to know the
+type.
+</p>
+
+<p>
+If you only have to deal with a finite (and preferably small) number of
+possible types for your generic, then you can get away with having the
+function accept a void pointer along with some sort of type indicator.
+For example:
+</p>
+
+<pre>
+enum genericTypes {integer, floatingPoint};
+
+void addNumbers (void * first, void * second, enum genericTypes type)
+{
+  if (type == integer)
+  {
+    int *a = (int*)first;
+    int *b = (int*)second;
+    *a = *a + *b;
+  }
+  else if (type == floatingPoint)
+  {
+    float *a = (float*)first;
+    float *b = (float*)second;
+    *a = *a + *b;
+  }
+}
+</pre>
+
+<p>
+Whew.  That'd be tedious for complex operations with many possible types, but it
+could be done.
+</p>
+
+<h3><a name="more">Additional Resources</a></h3>
+
+<p>
+Much has been written about C.  Not a whole lot of in-depth material about C
+has made it's way to the World Wide Web, probably because most programmers really
+do cry when they think about C, and lack motivation to write about it for free
+distribution.  Nevertheless, here are some sources you might find useful, both
+online and in hardcopy:
+</p>
+
+<ul>
+<li><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FC-Programming-Language-2nd%2Fdp%2F0131103628%2Fsr%3D8-1%2Fqid%3D1167714359%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">The C Programming Language</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, the classic
+guide to C by the folks who created it.</li>
+
+<li><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FExpert-Programming-Peter-van-Linden%2Fdp%2F0131774298%2Fsr%3D1-1%2Fqid%3D1167714429%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">Expert C Programming</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> by a C compiler guru
+formerly at Sun Microsystems.  Entertaining yet very
+informative on some of C's ickier parts.</li>
+
+<li><a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FReference-Manual-Samuel-P-Harbison%2Fdp%2F013089592X%2Fsr%3D1-1%2Fqid%3D1167714483%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">C: A Reference Manual</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.  It has been said
+that a programming language isn't legitimate until Guy Steele has written a
+reference manual for it.  This book makes C legitimate.</li>
+
+<li><a href="http://gcc.gnu.org/onlinedocs/">GCC Documentation</a>.  This page includes links
+to the documentation for the GNU C Compiler system, perhaps the most ubiquitous and
+often-used C compiler available today.</li>
+
+<li><a href="http://www.gnu.org/software/gnu-c-manual/">The GNU C Reference Manual</a>. It would
+be nice if modesty prevented me from recommending that you read my own book about C programming,
+prepared for FSF Project GNU.</li>
+</ul>
+
+
+
+
+
+<br clear=right>
+<hr>
+<i><a href="/">tjr@gnu.org</a></i>
+</body>
+</html>

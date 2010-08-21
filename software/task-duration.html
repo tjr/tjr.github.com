@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Task Duration</title>
+  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+</head>
+<body>
+    <h2>Task Duration</h2>
+<p><a href="/">Home</a> : <a href="/software/">Software</a> : One Project</p>
+<hr>
+    <a href="http://picasaweb.google.com/lh/photo/VJzQV-qPe93LaO9bRGeDiQ?feat=embedwebsite"><img src="http://lh6.ggpht.com/_IsIl4HvOgJw/R3bmQw_062I/AAAAAAAABHw/Yo-C65_1NsM/s288/829196-R1-006-1A.jpg" class="photo" align="right"/></a>
+
+
+<!--
+<h3>Quick Links</h3>
+
+<ul>
+<li><a href="/">Use the software</a></li>
+<li><a href="/">Get the source code</a></li>
+</ul>
+-->
+
+
+<h3>The Big Picture</h3>
+
+<p>
+Lethargy runs rampant in today's society. Most people have lots of things they would like to be doing, but instead of getting those things done, they find themselves watching reruns of <i>Laverne &amp; Shirley</i> in front of a giant flat-screen television, the expense of which is racking up interest payments on their credit cards. Even when someone has the realization that they really ought to just turn the television set off and get to work on one of the many goals they ostensibly have, the thought of completing a whole project can seem insurmountable.
+
+<p>
+Enter the task list. This handy method of breaking a huge project up into smaller, more manageable pieces has been the subject of many self-help books and implemented in a plethora of software tools. One feature that tends to only be in high-end, cumbersome project management tools is the notion of how long a task is expected to take. It might be easier to turn off the television and saunter over to your desk if you knew that you could make real, tangible progress on writing that novel / learning Italian / fixing the cabinet / whatever by completing a five minute task. Just five minutes, and you've accomplished something. After five minutes, you might feel on a roll and knock of a fifteen minute task, or an hour task. Or you might go back to watching television. But either way, you got something done, and you feel better about it.
+
+<p>
+The goal of this project is to create a task management system that highlights the expected duration of tasks, in hopes of inspiring more people to make progress on things that really matter in their lives. And if you happen to be a professional television critic, then by all means, enter a 22-minute task for watching <i>Laverne &amp; Shirley</i>.
+
+<h3>Design Summary</h3>
+
+<p>
+This software is developed using Ruby on Rails, run off of a single <a href="http://www.slicehost.com/">Slicehost</a> virtual server; if user requirements demand, machine resources can be increased and/or the foundational architecture modified.
+
+<p>
+The data model needs to consist of roughly:
+
+<ul>
+<li>Users Table</li>
+  <ul>
+  <li>Email address</li>
+  <li>Password</li>
+  <li>Real name</li>
+  <li>User name (optional, if the user wants a nice URL for public tasklist viewing)</li>
+  <li>Public or private (most users will probably want to keep their task list private, but some may want to share it)</li>
+  </ul>
+<li>Categories Table</li>
+  <ul>
+  <li>Category name</li>
+  <li>Created by (which user?)</li>
+  </ul>
+<li>Projects Table</li>
+  <ul>
+  <li>Project name</li>
+  <li>Project description (optional)</li>
+  <li>Created by (which user?)</li>
+  <li>Category (member of which?)</li>
+  </ul>
+<li>Tasks Table</li>
+  <ul>
+  <li>Task summary</li>
+  <li>Task details (optional)</li>
+  <li>Estimated duration</li>
+  <li>Created by (which user?)</li>
+  <li>Status (planned, in-progress, done, cancelled)</li>
+  <li>Project (member of which?)</li>
+  </ul>
+</ul>
+
+<p>
+Based on that structure, the idea is that a user would create general categories (Personal, Work, City Council, etc.), then create projects within those categories (Learn Italian, Build Autopilot Software, Repair City Government Building, etc.), and then create tasks within those projects (Memorize five new nouns, Hold review for program submodule, Get quote from roofing contractor, etc.).
+
+<p>
+Page requirements should be minimal. There will be a general home landing page from which users can login / register. Upon logging in, the user is directed to their own task list page, where they can access various views and sorts of their tasks, as well as create new tasks, and modify or delete existing tasks. Each user also has an accounts page, from which they can change their name / email / etc., specify if they want their task list to be publicly visible or not, and totally delete their account. (Unlike with online discussion forums, there is really no functional reason to not allow users to erase everything they've done on the site and go home.)
+
+<h3>Privacy and Security</h3>
+
+<p>
+User passwords will be stored encrypted. No secure server is planned at this time.
+
+<p>
+In theory, whoever has access to the raw database has access to all of the user data stored in it. In practice, the site administrators really don't care what is in the user task lists, and do not browse or search them. If a user requests support that involves cleaning up data in their account, the site administrators would ostensibly some user data, but do not peruse data beyond what is needful to fix problems, and maintain user privacy.
+
+<p>
+The site administrators must comply with any valid legal or government requests for data, lest they be violating the law.
+
+<h3>Data Backups</h3>
+
+<p>
+Once the system is in production use, backups will be made at least daily. Details to be determined later.
+<br clear=right>
+<hr>
+<i><a href="/">tjr@gnu.org</a></i>
+</body>
+</html>

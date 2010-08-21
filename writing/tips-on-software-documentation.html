@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Tips on Software Documentation</title>
+  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+</head>
+<body>
+    <h2>Tips on Software Documentation</h2>
+<p>by <a href="/">Trevis Rothwell</a><p>
+
+<p><a href="/">Home</a> : <a href="/writing/">Writing</a> : One Article</p>
+<hr>
+
+<a href="http://picasaweb.google.com/lh/photo/0shWMkYWB_P8kDDTrwWt1g?feat=embedwebsite"><img src="http://lh6.ggpht.com/_IsIl4HvOgJw/R3a4Pw_00mI/AAAAAAAAAU4/tvr2nijFMGg/s288/IMG_0041.jpg" class="photo" align="right"/></a>
+
+    <p>
+What does it mean to document software?  Does it mean that you should write comments
+in your code that explain nontrivial algorithms?  Does it mean that you should write
+a good manual for your end users?  Does it mean you should write API documentation
+so that other people using your code libraries will know how to interface with them?
+Does it mean that you should write software design descriptions so that someone updating
+your code or converting it to another language ten years down the road can learn what
+you were thinking when you built your masterpiece?
+</p>
+
+<p>
+Yes!
+</p>
+
+<p>
+Unfortunately, documentation as a whole is often seen as an afterthought: something
+to be tacked on to a software project at the last minute, if at all.  End user
+manuals are usually available in some form or another, but rarely are put together
+well.  API documentation is frequently terse, but at least it exists.  Comments
+and design descriptions tend to suffer the most, as the design thoughts and
+rationale for the software are obvious to the developer, and, so he or she thinks,
+would be obvious to anyone else as well.
+</p>
+
+
+<h3>User Manuals</h3>
+
+<p>
+Some software is so simple or so beautifully and intuitively designed that a manual
+would be truly redundant.  This is rare.  More often, the software is sufficiently
+complex and full of less than obvious functionality that a user needs help figuring out what
+to do.
+</p>
+
+<p>
+The first question to ask yourself as you prepare a new user manual is, who is your
+target audience?  This will be in part determined by what kind of software you are
+documenting, but not entirely.  Adobe Photoshop, for example, is a very large
+and complex software application that costs several hundred dollars; certainly only the
+most computer savvy among us would be using it, right?
+
+</p>
+
+<p>
+
+Maybe not.  While Photoshop certainly does appeal to computer savvy graphics artists,
+there are lots of professional and semi-professional photographers who have spent
+decades using film cameras only to find themselves lost in a world of digital
+technology.  These users may need a more gentle introduction to the software, with
+special focus on the parts of the application that are most pertinent to them.
+</p>
+
+<p>
+Of course, if you're documenting a big software product like Adobe Photoshop, then
+there is a whole other industry built around writing third-party documentation for
+your software.  All you have to do is provide comprehensive reference material that
+only a computer graphics nerd could understand, and wait around while other people
+produce easy-to-ready manuals geared for film photographers.
+</p>
+
+<p>
+Either way, you still have a target audience.  There may be more than one target
+audience.  You might write one manual for computer novices to learn from and
+another manual for late-shift cola-slurping nerds to inhale.  Explicitly identifying
+your target audience helps you narrow down what you can expect the reader to already
+know.  A computer novice might need help learning how to right-click on buttons,
+whereas a nerd might be offended to have to wade through such material.  A computer
+novice might need help learning how to install and launch your application, whereas
+a nerd might might be installing a new beta-version operating system on another computer
+while reading your manual.
+</p>
+
+<p>
+After you settle on your target audience, next ask yourself, what do I need to tell
+the reader about this application?  Your reader might be wanting to know, what is this
+software good for?  What will it do for me?  And you need to explain such things.  You
+might write a section of background information, explaining the purpose of the software
+and why it was built.  You might want to include a section that lists and briefly
+describes the core features of the software.
+</p>
+
+<p>
+If your software is a fancy, feature-filled version of some lesser product, then you
+should make sure to explain what makes it better.  You don't need to list other lesser
+products by name (leave that up to the nice folks in marketing), but make it clear to
+whoevestandards</li>
+
+</ul>
+
+<p>
+...and infinitely more.
+</p>
+
+
+<h3>Software Design Descriptions</h3>
+
+<p>
+An overall design description of the software is perhaps the most frequently
+ignored form of software documentation, yet very important.  A design description
+should include:
+</p>
+
+<ul>
+
+<li>The high-level overview.  What does this software do, and why do we care?  Someone
+reading this part of the documentation should have a good idea of what functionality
+the software provides to its users.  If they couldn't figure out why the software
+would be useful to someone based on reading this, then you haven't written enough.</li>
+
+<br>
+<li>Organizational details.  How is this software broken up into modules of code,
+and what does each module do?  (And why do we care)?  Someone reading this part of
+the documentation should be able to answer the question, "what would happen to
+this software if we removed module X?"  If they couldn't answer that question, then
+you haven't written enough about it.</li>
+
+<br>
+<li>Programmer issues.  What operating system(s), compiler(s), and programming
+languages were originally
+used to make this software?  What libraries are required to build it?  Were there
+any design or implementation compromises made because of limitations in the operating
+system, compiler, programming language, or libraries?  Someone reading this part of
+the documentation would have a good idea of what would be required to rebuild the
+software or to port it to a new operating system, programming language, etc.</li>
+
+<br>
+<li>References to other pertintent documentation.  You can't be expected to redocument
+everything vaguely related to your software.  If there are other documents that
+you or your colleagues have written that would help to explain details surrounding your
+software, then refer to them so that readers can find them.</li>
+
+</ul>
+
+<p>
+All of these details may seem glaringly obvious to you as you write the software, and
+they might also be obvious to your colleagues.  But unless your software is some
+throwaway hack, then part of building software that stands the test of time is documenting
+it so that future maintainers or porters will be able to do their job without you.  You
+may have moved on to another project, another company, or cashed in your investments
+and retired.  Did you write enough about your software design so that a reasonably
+intelligent newly-hired software engineer can read your documentation and pick up
+where you left off?
+
+</p>
+
+
+<h3>But Documentation is Boring!</h3>
+
+<p>
+Not every programmer is fond of writing prose, but this is something you just need
+to get over.  No one understands your software better than you do, so you are the best person to
+write about it.  You might want to have a writing colleague handle the end user
+documentation, but you should put some serious effort into anything that explains
+how the software internals are wired together.
+</p>
+
+<p>
+You can't write, you say?  The skill of writing documentation can be acquired.  The
+two best ways to acquire it are to spend time reading well-written documentation and
+to practice writing documentation.  Your first software design document might be
+horrible.  Your second might be marginally better.  Your third might be kinda good.
+The more you do it, the better you will get.
+</p>
+
+<p>
+
+You might also want to invest some time in reading a book like
+
+<a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FElements-Style-Fourth-William-Strunk%2Fdp%2F020530902X%2Fsr%3D1-1%2Fqid%3D1162873408%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">The Elements of Style</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.
+This ancient little masterpiece is jam-packed full of tips for improving the clarity
+of your writing.
+</p>
+
+
+<h3>Additional Resources</h3>
+
+<p>
+First, some examples of what I consider to be good documentation:
+</p>
+
+<ul>
+<li><a href="http://philip.greenspun.com/ancient-history/webmail/">
+Design and Implementation of a Web-based Email System</a>, by Jin S. Choi.</li>
+
+<li>
+<a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FCommon-LISP-Second-Language-Technologies%2Fdp%2F1555580416%2Fsr%3D8-1%2Fqid%3D1162873089%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">Common Lisp: the Language</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, by Guy L. Steele.</a>
+</li>
+
+<li>
+<a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FJava-TM-Language-Specification-3rd%2Fdp%2F0321246780%2Fsr%3D1-1%2Fqid%3D1162873188%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">The Java Language Specification</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, by James Gosling, Bill Joy, Guy Steele, and Gilad Bracha.
+</li>
+
+<li>
+<a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FJava-Developers-Almanac-1-4-Reference%2Fdp%2F0201752808%2Fsr%3D1-2%2Fqid%3D1162873257%3Fie%3DUTF8%26s%3Dbooks&tag=trevisrothwes-20&linkCode=ur2&camp=1789&creative=9325">The Java Developer's Almanac</a><img src="http://www.assoc-amazon.com/e/ir?t=trevisrothwes-20&amp;l=ur2&amp;o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />, by Patrick Chan.
+</li>
+</ul>
+
+<p>
+This one isn't documentation, but is still a worthwhile read for anyone writing
+software or software documenation:
+</p>
+
+<ul>
+<li>
+<a href="http://homepages.inf.ed.ac.uk/wadler/steele-oopsla98.pdf">Growing a
+Language</a> (PDF), by Guy Steele.
+</li>
+</ul>
+
+
+<br clear=right>
+<hr>
+<i><a href="/">tjr@gnu.org</a></i>
+
+</body>
+</html>

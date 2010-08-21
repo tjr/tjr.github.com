@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Cedar Rapids Online</title>
+  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+</head>
+<body>
+    <h2>Cedar Rapids Online</h2>
+<p><a href="/">Home</a> : <a href="/software/">Software</a> : Cedar Rapids Online</p>
+<hr>
+    <a href="http://picasaweb.google.com/lh/photo/1oP34MQeXoF6KDHG3dmrrQ?feat=embedwebsite"><img src="http://lh4.ggpht.com/_IsIl4HvOgJw/R3bgPQ_05AI/AAAAAAAAA4g/PtgjABVNHak/s288/downtown-cedar-rapids-05.jpg" class="photo" align="right"/></a>
+
+<h3>Quick Links</h3>
+<ul>
+<li><a href="http://github.com/tjr/CedarRapidsOnline">Get the source code</a></li>
+</ul>
+
+<h3>Background Info</h3>
+<p>
+Most of what I know about building web applications I have learned from
+<a href="http://philip.greenspun.com/">Philip Greenspun</a>. There are hundreds of books and hundreds of thousands of articles about building web applications, but Dr. Greenspun's approach to teaching web software engineering really resonated with me. The foundational element to his pedagogy, as described in <a href="http://philip.greenspun.com/seia/">Software Engineering for Internet Applications</a>, is for students to build something real, specifically an online community web service of some sort.
+
+<p>
+My first big web software project was to build an online learning community site for residents of Cedar Rapids, Iowa. I initially built it as a pile of Python scripts run in Apache through <a href="http://www.modpython.org/">mod_python</a>. The system worked, but wasn't very pretty.
+
+<p>
+I decided to rebuild the system more cleanly as a <a href="http://www.cherrypy.org/">CherryPy</a> web application. It's still a bunch of Python scripts, but now a little more elegantly designed.
+
+<h3>The Big Picture</h3>
+
+<p>
+As a traditional online learning community, the core of this site consists of magnet anchor content in the form of articles on which users can add comments, and a discussion forum. A basic events calendar, consisting of user-contributed event data, is also part of the design.
+
+<h3>Implementation</h3>
+
+<ul>
+<li>The web site is served simply by the built-in CherryPy web server. If this ever proves unable to handle the user load, the CherryPy documentation includes suggestions for other serving options.</li>
+<li>The data is stored in a half-dozen PostgreSQL tables.</li>
+<li>The web pages are generated using Python scripts built with the CherryPy web library and the PyGreSQL database library. No HTML templating language is used, as most of the HTML content is generated from data in the database, and I have no problem writing relatively small amounts of HTML directly in Python.</li>
+</ul>
+
+
+<br clear=right>
+<hr>
+<i><a href="/">tjr@gnu.org</a></i>
+</body>
+</html>

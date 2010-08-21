@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Cedar Rapids Online</title>
+  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+</head>
+<body>
+    <h2>Cedar Rapids Online</h2>
+<p><a href="/">Home</a> : <a href="/software/">Software</a> : Cedar Rapids Online</p>
+<hr>
+
+    <a href="http://picasaweb.google.com/lh/photo/1oP34MQeXoF6KDHG3dmrrQ?feat=embedwebsite"><img src="http://lh4.ggpht.com/_IsIl4HvOgJw/R3bgPQ_05AI/AAAAAAAAA4g/PtgjABVNHak/s288/downtown-cedar-rapids-05.jpg" class="photo" align="right"/></a>
+
+<h3>Quick Links</h3>
+<ul>
+<li><a href="http://github.com/tjr/CedarRapidsOnline">Get the source code</a></li>
+</ul>
+
+<h3>Background Information</h3>
+
+<p>
+Much of what I know about building web applications I learned from Philip Greenspun's
+<a href="http://philip.greenspun.com/seia/">MIT coursework</a>. To execute on what I
+learned, I decided to build an online learning community website for residents of
+Cedar Rapids, Iowa.  I originally built it using Python and PostgreSQL, running directly
+on top of the <a href="http://www.modpython.org/">mod_python</a> Apache module.  Unfortunately,
+either there was very little interest on the web for a Cedar Rapids online learning community,
+or I did a woeful job of marketing my project.  Maybe a little of both.  In any event, after
+it became clear that the vast majority of registered users were Russian spammers, I shut the
+site down.
+
+<p>
+However, even if the site was not a commercial success, it was still an example of the kind
+of work I can do, so I eventually decided to dust it off, polish it up, and unleash it as part
+of my project portfolio.  I spent about a week of evenings recoding the application to run
+in the <a href="http://www.cherrypy.org/">CherryPy</a> web framework, and released the source
+code under the GNU Affero GPL.  It could still stand some code refactoring and other miscellaneous
+improvements, but I'm not really interested in running it as a real user-facing website right
+now, and have mostly moved on to other projects for the time being.
+
+<p>
+The remainder of this document explains the software architecture and some design decisions
+from the point of view of getting ready for real users.
+
+
+<h3>Design Goals</h3>
+
+<p>
+This project is a traditional online learning community website, with the target audience
+of residents and potential future residents of Cedar Rapids, Iowa.  The key features are:
+
+<ul>
+<li>User accounts and authentication.</li>
+<li>Article documents, with optional user comments.</li>
+<li>Discussion forums, as user-generated content.</li>
+<li>Event calendar, as user-generated content.</li>
+</ul>
+
+<p>
+Apart from building the software, this project also requires magnet content in the form
+of articles (ideally with some pertinent photography).
+
+<h3>Implementation</h3>
+
+<h4>The Big Picture</h4>
+
+<ul>
+<li>The web site is served simply by the built-in CherryPy web server. If this ever proves
+unable to handle the user load, the CherryPy documentation includes suggestions for other
+serving options.</li>
+<li>The data is stored in a half-dozen PostgreSQL tables.</li>
+<li>The web pages are generated using Python scripts built with the CherryPy web library
+and the PyGreSQL database library. No HTML templating language is used, as most of the
+HTML content is generated from data in the database, and I have no problem writing
+relatively small amounts of HTML directly in Python.</li>
+</ul>
+
+
+<h4>The User Interface</h4>
+
+<ul>
+
+<li>Index Page<br>
+  The main index page includes an overview text describing the purpose of the
+  website, and provides links to the core functionality through a menu at the
+  top of the page.  (This menu is also present on the other pages.)  Without logging
+  in, the user can view the article pages, the discussion forum, and the event calendar,
+  but cannot contribute any information to the site.
+</li>
+
+<br><br>
+<li>Register Page<br>
+  The user registration page lets users create a new account on the site. Users must provide
+  a name (which will be displayed on most content they create on the site), an email address
+  (semi-validated through regular expressions), and a password.  They may optionally provide
+  the URL of their own website.  Based on past experience, full email validation, by way of
+  (say) sending a site-generated password to the user's email account can be a hindrance for
+  some users. While the site is new and extremely eager to attract as many new users as
+  possible, this hurdle is not being presented. As the site grows, it may be optimal to
+  require full email address validation.
+  <br><br>
+  Prior to a successful registration, the system verifies that the provided email address
+  is not already in use, as email addresses serve as the user's login ID, and as such must
+  be unique.
+</li>
+
+<br><br>
+<li>Login Page<br>
+  Registered users can log in by providing their email address and password.
+</li>
+
+<br><br>
+<li>Articles<br>
+  The main articles page is used to display an index of magnet content articles. The
+  article index is itself an article named "map"; going to "/articles/" presents the same
+  content as going to "/articles/map".
+  <br><br>
+  The articles themselves are accessible by passing the name (or, more precisely, the "slug")
+  of the article to the "/articles/" page.  For example, an article with the slug
+  "eating-out" would be viewable at the URL "/articles/eating-out". Each article can be
+  optionally set to allow user comments or disallow them; users must be logged in to post
+  comments.
+  <br><br>
+  Note also that the main index page ("/") is an article as well, named "welcome". This is
+  slightly non-sensical, but easily allows the main index to be editable from the articles
+  admin interface, rather than offering a separate interface just for the index.
+</li>
+
+<br><br>
+<li>Discussions<br>
+  The discussions page displays a listing of user-generated discussion threads, in
+  chronologically-descending order. Like the articles page, each discussion thread is
+  accessible as a sub-URL: "/discussions/" shows the index, and "/discussions/42" shows
+  discussion thread #42.  (Since articles are generated only by admin users, and there
+  will ostensibly be fewer articles than discussions, articles are identified by a
+  memorable slug name, while discussions are identified by number. A slug could be
+  generated based on discussion subject, if more SEO-friendly URLs are desired.)
+  <br><br>
+  Logged-in users can start new discussions from the index, and add replies to existing
+  threads from that thread's page. Nested threading is not implemented, in the hopes that
+  discussions will stay on topic.
+</li>
+
+<br><br>
+<li>Events<br>
+  The events page is very similar to the discussions page. Logged-in users can create new event
+  listings; the main events index shows a listing of events in chronological order (with
+  headers automatically inserted to separate months and years), and individual event
+  details can be viewed at, e.g., "/events/42".  No comments are allowed for events.
+</li>
+
+<br><br>
+<li>Admin Pages<br>
+  The admin pages are restricted to logged-in users at the admin level (2 or higher, though
+  presently there is no distinction for any user level above 2).  There are admin pages
+  to create and edit articles; delete comments; delete discussions; delete events. Throughout
+  the site, if the user is an admin, there are links attached to user-generated content to
+  go to page to delete the specified content. For example, for every discussion and reply,
+  there will be a link to delete it.  If a discussion is deleted, all replies are also deleted.
+  If a reply is deleted, only that particular reply is deleted.
+</li>
+
+</ul>
+
+<h3>Data Model</h3>
+
+<p>
+There are five tables in the data model:
+
+<ul>
+<li>users</li>
+<li>articles</li>
+<li>discussions</li>
+<li>discussion_categories</li>
+<li>events</li>
+</ul>
+
+<p>
+Article replies are stored as articles with a non-null "refers_to" field pointing
+to the parent article. Discussion replies are stored with a non-null "refers_to" field
+pointing to the parent discussion.  The discussion categories table is currently unused;
+when an online community is young, it's better to not segregate users into discussion
+categories, but rather keep all discussions together so people can find each other.  As
+the community grows, discussion categories may be implemented.
+
+<p>
+The SQL tables are written in PostgreSQL format, and are viewable (and documented in
+more detail) in the <a href="http://github.com/tjr/CedarRapidsOnline/blob/master/sql/crdb2.sql">
+code repository</a>.
+
+<h3>Future Directions</h3>
+
+<p>
+The existing design should be a fairly robust online learning community system. This
+is not a research project; online communities have existed since the mid-1990's, and
+much has been tried and either proven successful or failed.  Any changes that need to be
+made in this particular online community will have to be determined based on usage.
+
+<h3>License</h3>
+
+<p>
+The software is licensed under the
+<a href="http://www.gnu.org/licenses/licenses.html">GNU Affero GPL</a>.
+
+<p>
+<img src="/images/agpl.png">
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://philip.greenspun.com/seia/">Software Engineering for Internet
+Applications</a></li>
+<li><a href="http://philip.greenspun.com/wtr/dead-trees/">Database-Backed Web Sites</a></li>
+<li><a href="http://philip.greenspun.com/sql/">SQL for Web Nerds</a></li>
+</ul>
+
+
+
+
+<br clear=right>
+<hr>
+<i><a href="/">tjr@gnu.org</a></i>
+</body>
+</html>
+
