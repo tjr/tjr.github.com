@@ -1,10 +1,9 @@
-img.photo { border: 3px solid black; margin: 6px; margin-left: 10px; margin-right: 10px; }
-body {padding-left: 8%; padding-right: 8%;}
+img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-right: 10px; }
+body {padding-left: 8%; padding-right: 8%; font-family: "verdana"; font-size:11pt;}
+h2 {
+fcolor: #993300;
+    font-family: "Trebuchet MS", sans-serif; font-size: 24pt;}
 
-zh2 {
-color: #993300;
-    font-family: "Verdana", "Trebuchet MS", sans-serif; }
-
-zh3 {
+h3 {
 color: #000000;
-    font-family: "Verdana", "Trebuchet MS", sans-serif; }
+    font-family: "Trebuchet MS", sans-serif; font-size: 16pt;}
