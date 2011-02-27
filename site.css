@@ -2,6 +2,6 @@ img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-righ
 body {padding-left: 8%; padding-right: 8%;}
 
 /* fonts */
-body {font-family: Georgia;};
-h2 {font-family: Verdana;};
+body {font-family: Georgia;}
+h1, h2, h3, h4, h5 {font-family: Verdana;}
 
