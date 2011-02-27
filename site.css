@@ -3,5 +3,11 @@ body {padding-left: 8%; padding-right: 8%;}
 
 /* fonts */
 body {font-family: Georgia;}
-h1, h2, h3, h4, h5 {font-family: "Trebuchet MS"; font-size: 115%;}
+h1, h2, h3, h4, h5 {font-family: "Trebuchet MS";}
+h1 {font-size: 20pt;}
+h2 {font-size: 18pt;}
+h3 {font-size: 16pt;}
+h4 {font-size: 14pt;}
+h5 {font-size: 12pt;}
+
 
