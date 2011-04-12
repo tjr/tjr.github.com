@@ -14,8 +14,9 @@ div.content {
 }
 
 div.nav {
-  background-color: #99BBDD;
+  background-color: #AACCEE;
   border: 1px solid #444;
+  padding: 2px;
 }
 
 /* fonts */
