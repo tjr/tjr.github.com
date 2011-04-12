@@ -13,6 +13,11 @@ div.content {
 	 border: 1px;
 }
 
+div.nav {
+  background-color: #99BBDD;
+  border: 1px solid #444;
+}
+
 /* fonts */
 body {font-family: Verdana; font-size:10pt;}
 h1, h2, h3, h4, h5 {font-family: "Trebuchet MS";}
