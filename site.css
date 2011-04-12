@@ -1,23 +1,9 @@
 img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-right: 10px; }
 body {
-     margin: 50px 0px;
-     padding: 0px;
-     text-align: center;
+padding-left: 15%;
+padding-right: 15%;
 }
 
-div.content {
-	 width: 600px;
-	 margin: 0px auto;
-	 text-align: left;
-	 padding: 15px;
-	 border: 1px;
-}
-
-div.nav {
-  background-color: #AACCEE;
-  border: 1px solid #444;
-  padding: 2px;
-}
 
 /* fonts */
 body {font-family: Verdana; font-size:10pt;}
