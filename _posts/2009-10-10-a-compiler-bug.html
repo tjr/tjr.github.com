@@ -1,0 +1,12 @@
+---
+layout: weblogentry
+title: A Compiler Bug
+---
+
+I was converting an avionics subsystem from Ada to C. It was a client application that had to talk to an Ada server, sending and receiving rather huge chunks of data, large, deeply nested, intricate structure types. The C structure type had to match the Ada type exactly, or else it wouldn't work.
+
+I got it working fine on our desktop simulation, but running on the actual hardware it was consistently off. After extensive testing, I realized that it was a bug in the compiler for the target hardware, such that a very particular type of structure (something like, {int, char, float}) was being packed incorrectly, resulting in a 2-byte pad that shouldn't be there. If I reordered the structure elements, it was fine, but that particular grouping and order refused to work correctly.
+
+It was GCC, so we could fix the compiler ourselves, right? Not very practically, as, for avionics systems the compiler has to be thoroughly qualified for avionics use, and changes equal requalification. I "fixed" it by storing the float as an array of characters, converting it to and from a real float type as we needed to use the data value.
+
+Trivial, perhaps, but I was very excited to resolve the problem, after spending days barking up wrong trees. One usually expects that the problem is not in the compiler...
