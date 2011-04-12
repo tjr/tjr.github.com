@@ -4,6 +4,7 @@ padding-left: 8%;
 padding-right: 8%;
 }
 
+div.weblogentry {padding-left: 8%; padding-right: 8%;}
 
 /* fonts */
 body {font-family: Verdana; font-size:10pt;}
