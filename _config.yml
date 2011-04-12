@@ -1,2 +1,3 @@
-baseurl: '/journal'
+permalink: /journal/:year/:month/:title
+
 
