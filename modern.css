@@ -5,7 +5,7 @@ body {
      text-align: center;
 }
 
-#content {
+div.content {
 	 width: 500px;
 	 margin: 0px auto;
 	 text-align: left;
