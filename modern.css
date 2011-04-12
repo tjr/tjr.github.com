@@ -1,0 +1,25 @@
+img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-right: 10px; }
+body {
+     margin: 50px 0px;
+     padding: 0px;
+     text-align: center;
+}
+
+#content {
+	 width: 500px;
+	 margin: 0px auto;
+	 text-align: left;
+	 padding: 15px;
+	 border: 1px;
+}
+
+/* fonts */
+/* body {font-family: Georgia; font-size:11.5pt;} */
+/* h1, h2, h3, h4, h5 {font-family: "Trebuchet MS";} */
+h1 {font-size: 24pt;}
+h2 {font-size: 20pt;}
+h3 {font-size: 16pt;}
+h4 {font-size: 14pt;}
+h5 {font-size: 12pt;}
+
+
