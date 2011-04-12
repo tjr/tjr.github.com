@@ -1,0 +1,26 @@
+---
+layout: weblogentry
+title: Completion of an iPhone Program
+---
+
+In August 2008, I applied to the Apple iPhone Developer Program under the name of my software consulting company. I went weeks without hearing back from Apple, but finally got a request to send them, via fax, proof of my companyœôòùs legal existence, such as the company name registration. I got that faxed to them within a few days.
+
+<p>
+Several weeks after that, I received a voicemail message from someone at Apple concerning my application, with instructions to call back at a certain phone number. I dialed that number many times over a period of weeks, but it was constantly busy.
+
+<p>
+At the recommendation of a <a href="http://www.platinumball.net/blog/">friendly stranger on the internet</a>, I wrote my initial application off as lost in never-never land, created a new account at apple.com and applied again, this time as an individual developer rather than a company. My application was immediately approved.
+
+<p>
+The several months I spent waiting for my application process to go through I opted to not use for learning the iPhone SDK and getting my first application ready, because if I never got into the developer program I wouldnœôòùt be able to distribute my software and didnœôòùt want to waste the time. So now that I was accepted into the program, I had a nice learning curve ahead of me.
+
+<p>
+I dabbled in several application ideas, mostly getting nowhere. Finally, to help motivate myself by getting something accomplished, I remembered one of the first Java applets I wrote some eleven years earlier: the Almond Emulator! This was a little program that I cooked up to introduce myself to Java GUI development, inspired by a magnet advertising the <a href="http://www.almondsarein.com/">Almond Board of California</a> which arrived in the mail for reasons not sufficiently investigated.
+<p>
+Armed with stock photography from <a href="http://www.istockphoto.com/">iStockPhoto.com</a>, I assembled an iPhone version of this nearly useless utility. My original plan was to release it to the Apple iTunes store for free, but given the plethora of similarly useless programs that were making a good bit of money, I ultimately listed it for sale at the lowest possible amount (99 cents, in United States currency). The program provides marginal value, but people pay more than 99 cents for things like clown noses and cans of spring-loaded snakes, and I figured that my program was in the same general category.
+<p>
+Less than four business days after submitting it to the iTunes store, the program was approved and available for purchase, and started selling immediately. One kind user even gave the program a five-star review, stating that itœôòùs humorous, but œôòünot worth the money.œôòý
+<p>
+One of the principles of good business is to offer your product at a fair price. I have other more useful iPhone applications in the queue that I quite solidly intend to sell for money, but in this case I accepted this reviewerœôòùs constructive criticism and changed the Almond Emulator to be a free download.
+<p>
+So I am now a real, live iPhone developer. As far as I am aware, this may well be the easiest way for a programmer to put a software product out in the marketplace and get payment in exchange for their work.
