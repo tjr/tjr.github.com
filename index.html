@@ -26,11 +26,17 @@ I received a degree in computer science from <a href="http://www.cornellcollege.
 iPhone</a></li>
 </ul>
 
+<h3>Latest Weblog Posts</h3>
+<ul>
+{% for post in site.posts limit:3 %}
+<li><a href="{{post.url}}">{{post.title}}</a> (<em>{{post.date | date_to_long_string}}</em>)</li>
+{% endfor %}
+</ul>
+
 <h3>More of Me on the Web</h3>
 
 <ul>
 <li><a href="http://flickr.com/photos/trothwell/">My Photographs</a></li>
-<li><a href="http://trevisrothwell.posterous.com/">My Weblog</a></li>
 </ul>
 
 <h3>Contact</h3>
@@ -42,8 +48,8 @@ email encryption, if you're into that sort of thing.</li>
 </ul>
 
 <p>
-This website is hosted free of charge on <a href="http://www.github.com/">GitHub</a>, as a set
-of <a href="http://pages.github.com/">GitHub Pages</a>.
+This website is hosted as a set of <a href="http://pages.github.com/">GitHub Pages</a> and edited
+using <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a>.
 
 <br clear=right>
 <hr>
