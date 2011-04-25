@@ -5,14 +5,14 @@ padding-right: 8%;
 }
 
 div.header {
-  background: #BBCCCC;
-  margin: 1em;
+  background: #BBDDDD;
+  padding: 1em;
   border: 1px solid black;
 }
 
 div.footer {
   background: #DDDDDD;
-  margin: 1em;
+  padding: 1em;
   border: 1px solid black;
 }
 
