@@ -5,11 +5,13 @@ padding-right: 8%;
 }
 
 div.header {
-  background: #FFDDDD;
+  background: #DDFFFF;
+  margin: 0px;
 }
 
 div.footer {
   background: #DDDDDD;
+  margin: 0px;
 }
 
 div.blogcontent {padding-left: 5%; padding-right: 5%; padding-top: 10px; padding-bottom: 10px; color: #333;}
