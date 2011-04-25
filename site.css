@@ -7,16 +7,16 @@ padding-right: 8%;
 h2.header {margin-top: 0em;}
 
 div.header {
-  background: #BBDDDD;
+  background: #AACCCC;
   padding-top: 0.25em;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
   border: 1px solid black;
 }
 
 div.footer {
-  background: #DDDDDD;
+  background: #CCCCCC;
   padding: 1em;
   border: 1px solid black;
 }
