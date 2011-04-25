@@ -19,6 +19,11 @@ div.footer {
   border: 1px solid black;
 }
 
+div.content {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 div.blogcontent {padding-left: 5%; padding-right: 5%; padding-top: 10px; padding-bottom: 10px; color: #333;}
 
 ul.bloglist {list-style-type: circle;}
