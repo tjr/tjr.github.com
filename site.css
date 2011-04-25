@@ -6,7 +6,8 @@ padding-right: 8%;
 
 div.header {
   background: #BBDDDD;
-  padding: 0.5em;
+  paddin-top: 0.25em;
+  padding-bottom: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
   border: 1px solid black;
