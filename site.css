@@ -4,6 +4,8 @@ padding-left: 8%;
 padding-right: 8%;
 }
 
+h2.header {padding-top: 0em;}
+
 div.header {
   background: #BBDDDD;
   padding-top: 0.25em;
