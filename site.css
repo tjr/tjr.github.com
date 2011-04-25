@@ -8,10 +8,7 @@ h2.header {margin-top: 0em;}
 
 div.header {
   background: #AACCCC;
-  padding-top: 0.25em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
   border: 1px solid black;
 }
 
