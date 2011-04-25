@@ -8,13 +8,13 @@ h2.header {margin-top: 0em;}
 
 div.header {
   background: #AACCCC;
-  padding: 1em;
+  padding: 0.6em;
   border: 1px solid black;
 }
 
 div.footer {
   background: #CCCCCC;
-  padding: 1em;
+  padding: 0.6em;
   border: 1px solid black;
 }
 
