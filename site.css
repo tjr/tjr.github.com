@@ -9,6 +9,7 @@ h2.header {margin-top: 0em;}
 div.header {
   background: #AACCCC;
   padding: 0.6em;
+  padding-bottom: 1.2em;
   border: 1px solid black;
 }
 
