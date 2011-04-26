@@ -23,9 +23,14 @@ div.header {
 }
 
 div.footer {
-  background: #CCCCCC;
-  padding: 0.6em;
-  border: 1px solid black;
+  background: #AACCCC;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-top: 1em;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  border-top: 1px solid black;
 }
 
 div.content {
