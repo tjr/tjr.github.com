@@ -17,8 +17,8 @@ div.header {
   padding-top: 1em;
   padding-left: 2em;
   padding-bottom: 1em;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -5px;
+  margin-right: -5px;
   margin-top: -10px;
   border-bottom: 1px solid black;
 }
@@ -28,8 +28,8 @@ div.footer {
   padding-bottom: 1em;
   padding-left: 2em;
   padding-top: 1em;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -5px;
+  margin-right: -5px;
   margin-bottom: -10px;
   border-top: 1px solid black;
 }
