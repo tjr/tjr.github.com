@@ -15,7 +15,9 @@ div.header {
   background: #AACCCC;
   padding: 0.6em;
   padding-bottom: 1em;
-  border: 1px solid black;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid black;
 }
 
 div.footer {
