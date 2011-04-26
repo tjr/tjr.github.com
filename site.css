@@ -4,6 +4,11 @@ padding-left: 8%;
 padding-right: 8%;
 }
 
+body.j {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
 h2.header {margin-top: 0em;}
 
 div.header {
