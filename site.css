@@ -31,12 +31,14 @@ div.footer {
   margin-left: -5px;
   margin-right: -5px;
   margin-bottom: -10px;
-  border-top: 1px solid black;
+  border-top: 1px dotted black;
 }
 
 div.content {
   padding-top: 0.5em;
   padding-bottom: 1.2em;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 div.blogcontent {padding-left: 5%; padding-right: 5%; padding-top: 10px; padding-bottom: 10px; color: #333;}
