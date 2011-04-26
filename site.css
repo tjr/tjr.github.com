@@ -33,6 +33,7 @@ div.footer {
   margin-bottom: -10px;
   border-top: 1px solid black;
   height: 100%;
+  overflow: auto;
 }
 
 div.content {
