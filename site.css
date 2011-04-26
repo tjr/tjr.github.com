@@ -12,11 +12,13 @@ body.j {
 h2.header {margin-top: 0em;}
 
 div.header {
-  background: #AACCCC;
-  padding: 0.6em;
+  background: #DDDDDD;
+  padding-top: 1em;
+  padding-left: 2em;
   padding-bottom: 1em;
   margin-left: -10px;
   margin-right: -10px;
+  margin-top: -10px;
   border-bottom: 1px solid black;
 }
 
