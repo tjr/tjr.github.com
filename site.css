@@ -1,4 +1,7 @@
 img.photo { border: 2px solid black; margin: 6px; margin-left: 24px; margin-right: 0px; }
+
+img.photoleft { border: 2px solid black; margin: 6px; margin-left: 0px; margin-right: 24px; }
+
 body {
 padding-left: 6%;
 padding-right: 6%;
