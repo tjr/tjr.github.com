@@ -22,6 +22,14 @@ I received a degree in computer science from <a href="http://www.cornellcollege.
 <li><a href="/writing/being-at-the-bottom-of-things">Being at the Bottom of Things</a></li>
 </ul>
 
+<h3>Latest Weblog Entries</h3>
+
+<ul>
+{% for post in site.posts limit: 3 %}
+<li><a href="{{post.url}}">{{post.title}}</a> ({{post.date | date:"$d %M %Y"}})</li>
+{% endfor %}
+</ul>
+
 <h3>More of Me on the Web</h3>
 
 <ul>
