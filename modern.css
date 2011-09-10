@@ -1,7 +1,8 @@
 img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-right: 10px; }
 body {
-     padding: 5em 0 0 0;
+     padding: 10px 0 0 0;
      text-align: center;
+     background-color: #DDD;
 }
 
 #content {
@@ -9,7 +10,7 @@ body {
 	 margin: 0px auto;
 	 text-align: left;
 	 padding: 15px;
-	 border: 1px;
+	 border: 1px solid #555;
 }
 
 div.nav {
