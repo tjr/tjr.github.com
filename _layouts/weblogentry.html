@@ -12,21 +12,18 @@
 <p>
 <a href="/">Home</a> : <a href="/weblog/">Weblog</a> : {{ page.date | date_to_long_string }}
 
-<hr>
-
-<div id="blogcontent">
-{{ content }}
-</div>
-
-<hr>
-<center>
+<p>
 {% if page.previous %} 
         <a rel="prev" href="{{ page.previous.url }}">&larr; Older</a>
     {% endif %}
     {% if page.next %} 
         <a rel="next" href="{{ page.next.url }}">Newer &rarr;</a>
     {% endif %}
-</center>
+<hr>
+
+<div id="blogcontent">
+{{ content }}
+</div>
 
 <hr>
 
