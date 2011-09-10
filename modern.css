@@ -20,6 +20,10 @@ div.nav {
   padding: 2px;
 }
 
+li.entries {
+  padding-bottom: 3px;
+}
+
 /* fonts */
 body {font-family: Verdana; font-size:10pt;}
 h1, h2, h3, h4, h5 {font-family: "Trebuchet MS";}
