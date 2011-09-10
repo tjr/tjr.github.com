@@ -11,10 +11,12 @@
 <h2>{{ page.title }}</h2>
 <p>
 <a href="/">Home</a> : <a href="/weblog/">Weblog</a> : {{ page.date | date_to_long_string }}
-
-<p>
+:
 {% if page.previous %} 
         <a rel="prev" href="{{ page.previous.url }}">&larr; Older</a>
+	{% if page.next %}
+	:
+	{% endif %}
     {% endif %}
     {% if page.next %} 
         <a rel="next" href="{{ page.next.url }}">Newer &rarr;</a>
