@@ -1,9 +1,9 @@
 img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-right: 10px; }
 body {
      padding-top: 10px;
-     padding-bottom: 10px;
+     padding-bottom: 20px;
      text-align: center;
-     background-color: #CDD;
+     background-color: #BCC;
 }
 
 #content {
