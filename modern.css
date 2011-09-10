@@ -16,8 +16,11 @@ body {
 }
 
 #blogcontent {
-  padding-top: 1em;
-  padding-bottom: 1em;
+}
+
+blogcontent.p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 div.nav {
