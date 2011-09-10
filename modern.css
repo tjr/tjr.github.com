@@ -13,7 +13,6 @@ body {
 	 text-align: left;
 	 padding: 25px;
 	 border: 1px solid #555;
-	 color: #444;
 }
 
 div.nav {
@@ -27,8 +26,8 @@ li.entries {
 }
 
 /* fonts */
-body {font-family: Verdana; font-size:10pt;}
-h1, h2, h3, h4, h5 {font-family: "Trebuchet MS";}
+body {font-family: Verdana; font-size:10pt; color: #333;}
+h1, h2, h3, h4, h5 {font-family: "Trebuchet MS"; color: #000;}
 h1 {font-size: 24pt;}
 h2 {font-size: 20pt;}
 h3 {font-size: 16pt;}
