@@ -15,9 +15,11 @@ body {
 	 border: 1px solid #555;
 }
 
-div.blogcontent {
+#blogcontent {
   padding-top: 1em;
   padding-bottom: 1em;
+
+  width: 500px;
 }
 
 div.nav {
