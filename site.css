@@ -1,61 +1,48 @@
-img.photo { border: 2px solid black; margin: 6px; margin-left: 24px; margin-right: 0px; }
-
-img.photoleft { border: 2px solid black; margin: 6px; margin-left: 0px; margin-right: 24px; }
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Actor);
+@import url(http://fonts.googleapis.com/css?family=Antic);
 
 body {
-padding-left: 6%;
-padding-right: 6%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #FFF;
 }
 
-body.j {
-  padding-left: 0%;
-  padding-right: 0%;
-  height: 100%;
+#content {
+    background-color: #FFF;
+    width: 580px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 25px;
 }
 
-h2.header {margin-top: 0em;}
-
-div.header {
-  background: #DDDDDD;
-  padding-top: 1em;
-  padding-left: 2em;
-  padding-bottom: 1em;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-top: -10px;
-  border-bottom: 1px solid black;
+.seashell {
+  background-color: SeaShell;
+  padding: 1em;
+  padding-top: 1px;
 }
 
-div.footer {
-  background: #FFF;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-top: 1em;
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-bottom: -10px;
-  border-top: 1px solid black;
+.powderblue {
+  background-color: PowderBlue;
+  padding: 1em;
 }
 
-div.content {
-  padding-top: 0.5em;
-  padding-bottom: 1.2em;
-  padding-left: 8%;
-  padding-right: 8%;
+.peachpuff {
+  background-color: PeachPuff;
+  padding: 1em;
 }
 
-div.blogcontent {padding-left: 5%; padding-right: 5%; padding-top: 10px; padding-bottom: 10px; color: #333;}
+.white {
+  background-color: white;
+  padding: 1em;
+}
 
-ul.bloglist {list-style-type: circle;}
-li.bloglist {padding-bottom: 6px;}
 /* fonts */
-/*
-body {font-family: Verdana; font-size:10pt;}
-h1, h2, h3, h4, h5 {font-family: "Trebuchet MS";}
+body {font-family: Verdana; font-size:10pt; color: #333;}
+h1, h2, h3, h4, h5 {font-family: "Antic", "Actor", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
 h1 {font-size: 24pt;}
 h2 {font-size: 20pt;}
-h3 {font-size: 16pt;}
-h4 {font-size: 14pt;}
-h5 {font-size: 12pt;}
-*/
-
+h3 {font-size: 14pt;}
+h4 {font-size: 12pt;}
+h5 {font-size: 10pt;}

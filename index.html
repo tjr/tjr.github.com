@@ -1,56 +1,71 @@
----
-layout: home
-title: Trevis Rothwell's home page
----
+<html>
+<head>
+    <title>Trevis Rothwell's home page</title>
+    <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8">
+</head>
 
-<h2>Trevis Rothwell's home page</h2>
-<hr>
+<body>
+<div id="content">
 
-<a href="http://www.flickr.com/photos/trothwell/3621432602/" title="Me, me, me by trothwell, on Flickr"><img src="http://farm4.static.flickr.com/3645/3621432602_a7ee713805_m.jpg" width="240" height="162" alt="Me, me, me" class="photo" align="right"></a>
+<div class="white">
+<h1>Trevis Rothwell's home page</h1>
+</div>
 
+<div class="powderblue">
 <p>
-Welcome to my home page on the <a href="http://www.w3.org/history.html">World Wide Web!</a> I spend
-most of my waking hours as a <a href="/software/">software engineer</a> and <a href="/music/">musician</a>.
-I also enjoy <a href="/photography/">photography</a>, <a href="/writing/">writing</a>, and
-<a href="/dogs/samantha">raising a border collie</a>.
-I received a degree in computer science from <a href="http://www.cornellcollege.edu/">Cornell College</a>.
+Welcome to my home page on the <a href="http://www.w3.org/History.html">World Wide Web</a>!
+I am a software engineer and musician,
+with interests also in photography, writing, and raising a border collie. I received
+a degree in computer science from <a href="http://www.cornellcollege.edu/">Cornell College</a>.
+</p>
+</div>
 
-<h3>What's New?</h3>
-
+<div class="SeaShell">
+<h3>iOS Applications</h3>
 <ul>
-<li>Photos of <a href="http://www.flickr.com/photos/trothwell/sets/72157627470327493/">Samantha at the Park</a></li>
-<li><a href="/writing/being-at-the-bottom-of-things">Being at the Bottom of Things</a></li>
+<li><a href="http://itunes.apple.com/us/app/lets-decide/id416497722">Let's Decide</a></li>
+<li><a href="http://itunes.apple.com/us/app/music-measurement/id305144557?mt=8">Music Measurement</a></li>
 </ul>
 
-<h3>Latest Weblog Entries</h3>
-
+<h3>Open Source</h3>
 <ul>
-{% for post in site.posts limit: 3 %}
-<li><a href="{{post.url}}">{{post.title}}</a> (<em>{{post.date | date_to_long_string}}</em>)</li>
-{% endfor %}
+<li><a href="http://www.gnu.org/software/gnu-c-manual/">The GNU C Reference Manual</a></li>
+<li><a href="http://github.com/tjr/">GitHub repository</a></li>
 </ul>
 
+<h3>Music Projects</h3>
 <ul>
-<li><a href="/weblog/">Older entries...</a></li>
+<li><a href="http://cdbaby.com/cd/trevisr2">Believing Side of Life</a></li>
+<li><a href="http://cdbaby.com/cd/trevisr3">Flow</a></li>
+<li><a href="http://cdbaby.com/cd/trevisr">Walking in the Light</a></li>
 </ul>
 
-<h3>More of Me on the Web</h3>
-
+<h3>Photography</h3>
 <ul>
-<li><a href="http://flickr.com/photos/trothwell/">My Photographs</a></li>
+<li><a href="http://flickr.com/photos/trothwell">Flickr photo stream</a></li>
 </ul>
 
-<h3>Contact</h3>
-
+<h3>Web</h3>
 <ul>
-<li>Email me at: <a href="mailto:tjr@acm.org">tjr@acm.org</a></li>
-<li>You can use my <a href="/tjr.gpg">public key</a>, for use with <a href="http://www.openpgp.org/">OpenPGP</a>-based
-email encryption, if you're into that sort of thing.</li>
+<li><a href="http://www.raisingabordercollie.com/">RaisingABorderCollie.com</a></li>
 </ul>
+</div>
 
+<div class="peachpuff">
 <p>
-This website is hosted as a set of <a href="http://pages.github.com/">GitHub Pages</a> and edited
-using <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a>.
+<b>Consulting</b>: Need some iOS development, Python scripting, or technical writing done? I might be
+available to work on your project! Feel free to <a href="mailto:tjr@acm.org">send me an email</a>
+to discuss.
+</p>
+</div>
 
-<br clear=right>
+<div class="powderblue">
+<p>
+<b>Contact</b>: <a href="mailto:tjr@acm.org">tjr@acm.org</a> :
+<a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x03B7725C092D4D37">public key</a>
+</p>
+</div>
 
+</div>
+</body>
+</html>
