@@ -7,7 +7,7 @@ body {
     padding-bottom: 20px;
     text-align: center;
     background-color: #FFF;
-    background: url("http://subtlepatterns.com/patterns/square_bg.png");
+    background-image: url("http://subtlepatterns.com/patterns/square_bg.png");
 }
 
 #content {
