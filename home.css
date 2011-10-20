@@ -21,11 +21,10 @@ body {
 
 img.photo { border: 1px solid black; }
 
-p {padding-bottom: 1em; padding-top: 1em;}
 
 .insertbox {
-  background-color: #DDD;
-  padding: 4px;
+  background-color: #CCC;
+  padding: 1em;
 }
 
 .powderblue {
