@@ -6,13 +6,13 @@ body {
     padding-bottom: 0px;
     margin: 0px;
     text-align: center;
-    background-color: #69B;
+    background-color: #58A;
     background-image: url("http://subtlepatterns.com/patterns/square_bg.png");
 }
 
 #content {
     background-color: #FFF;
-    width: 775px;
+    width: 675px;
     margin: 0px auto;
     text-align: left;
     padding: 0px;
