@@ -6,7 +6,7 @@ body {
     padding-bottom: 20px;
     text-align: center;
     background-color: #FFF;
-    background-image: url("http://subtlepatterns.com/patterns/random_grey_variations.png");
+    background-image: url("/images/random_grey_variations.png");
 }
 
 #content {
