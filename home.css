@@ -26,6 +26,8 @@ p {padding-bottom: 1em; padding-top: 1em;}
 .powderblue {
   background-color: #BBB;
   padding: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 .peachpuff {
@@ -41,8 +43,8 @@ p {padding-bottom: 1em; padding-top: 1em;}
 /* fonts */
 body {font-family: Verdana; font-size:10pt; color: #111;}
 h1, h2, h3, h4, h5 {font-family: "Andika", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
-h1 {font-size: 32pt;}
-h2 {font-size: 26pt;}
-h3 {font-size: 22pt;}
-h4 {font-size: 18pt;}
-h5 {font-size: 16pt;}
+h1 {font-size: 28pt;}
+h2 {font-size: 24pt;}
+h3 {font-size: 20pt;}
+h4 {font-size: 16pt;}
+h5 {font-size: 14pt;}
