@@ -11,7 +11,7 @@ body {
 
 #content {
     background-color: #FFF;
-    width: 750px;
+    width: 775px;
     margin: 0px auto;
     text-align: left;
     padding: 0px;
@@ -34,7 +34,7 @@ p {padding-bottom: 1em; padding-top: 1em;}
 
 .white {
   background-color: white;
-  padding: 1em;
+  padding: 2em;
 }
 
 /* fonts */
