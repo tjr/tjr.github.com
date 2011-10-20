@@ -20,6 +20,8 @@ body {
 
 img.photo { border: 1px solid black; }
 
+p {padding-bottom: 1em;}
+
 .powderblue {
   background-color: #7DBD9D;
   padding: 1em;
