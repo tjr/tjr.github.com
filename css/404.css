@@ -1,0 +1,50 @@
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #FFF;
+    background-image: url("/images/squares.png");
+}
+
+#content {
+    background-color: #FFF;
+    width: 600px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+img.photo { border: 1px solid black; }
+
+.insertbox {
+  background-color: #CCC;
+  padding: 1em;
+}
+
+.powderblue {
+  background-color: #BBB;
+  padding: 1em;
+}
+
+.peachpuff {
+  background-color: #FFA45D;
+  padding: 1em;
+}
+
+.white {
+  background-color: white;
+  padding: 2em;
+}
+
+/* fonts */
+body {font-family: Verdana; font-size:10pt; color: #111;}
+h1, h2, h3, h4, h5 {font-family: "Architects Daughter", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
+h1 {font-size: 24pt;}
+h2 {font-size: 20pt;}
+h3 {font-size: 18pt;}
+h4 {font-size: 16pt;}
+h5 {font-size: 14pt;}
