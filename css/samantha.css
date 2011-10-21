@@ -1,5 +1,4 @@
 /* Imports */
-@import url(http://fonts.googleapis.com/css?family=Crafty+Girls);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
 body {
@@ -23,6 +22,11 @@ img.photo { border: 1px solid black; }
 
 p {padding-bottom: 1em; padding-top: 1em;}
 
+.insertbox {
+  background-color: #CCC;
+  padding: 1em;
+}
+
 .powderblue {
   background-color: #BBB;
   padding: 1em;
@@ -41,7 +45,7 @@ p {padding-bottom: 1em; padding-top: 1em;}
 /* fonts */
 body {font-family: Verdana; font-size:10pt; color: #111;}
 h1, h2, h3, h4, h5 {font-family: "Indie Flower", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
-h1 {font-size: 36pt;}
+h1 {font-size: 36pt; text-decoration: underline;}
 h2 {font-size: 28pt;}
 h3 {font-size: 22pt;}
 h4 {font-size: 18pt;}
