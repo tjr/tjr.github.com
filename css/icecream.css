@@ -5,7 +5,7 @@ body {
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: #FFD1E0;
+    background-color: #EEC1F0;
     background-image: url("/images/square_bg.png");
 }
 
@@ -43,8 +43,8 @@ img.photo { border: 1px solid black; }
 /* fonts */
 body {font-family: Verdana; font-size:10pt; color: #111;}
 h1, h2, h3, h4, h5 {font-family: "Cherry Cream Soda", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
-h1 {font-size: 26pt;}
-h2 {font-size: 22pt;}
+h1 {font-size: 24pt;}
+h2 {font-size: 20pt;}
 h3 {font-size: 18pt;}
 h4 {font-size: 16pt;}
 h5 {font-size: 14pt;}
