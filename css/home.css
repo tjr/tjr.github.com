@@ -4,7 +4,8 @@
 body {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin: 0px;
+    margin-top: 1em;
+    mardin-bottom: 2em;
     text-align: center;
     background-color: #257;
     background-image: url("/images/square_bg.png");
@@ -16,7 +17,7 @@ body {
     margin: 0px auto;
     text-align: left;
     padding: 0px;
-    border: 0px solid black;
+    border: 3px solid #999;
 }
 
 img.photo { border: 1px solid black; }
