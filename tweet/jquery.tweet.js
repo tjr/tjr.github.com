@@ -170,7 +170,7 @@
       o.avatar_size = s.avatar_size;
       o.avatar_url = extract_avatar_url(item, (document.location.protocol === 'https:'));
       o.retweet = typeof(item.retweeted_status) != 'undefined';
-      o.tweet_time = ''; //parse_date(item.created_at);
+      o.tweet_time = parse_date(item.created_at);
       o.join_text = s.join_text == "auto" ? build_auto_join_text(item.text) : s.join_text;
       o.tweet_id = item.id_str;
       o.twitter_base = "http://"+s.twitter_url+"/";
@@ -180,7 +180,7 @@
       o.retweet_url = o.twitter_base+"intent/retweet?tweet_id="+o.tweet_id;
       o.favorite_url = o.twitter_base+"intent/favorite?tweet_id="+o.tweet_id;
       o.retweeted_screen_name = o.retweet && item.retweeted_status.user.screen_name;
-      o.tweet_relative_time = relative_time(o.tweet_time);
+      o.tweet_relative_time = ''; //relative_time(o.tweet_time);
       o.entities = item.entities ? (item.entities.urls || []).concat(item.entities.media || []) : [];
       o.tweet_raw_text = o.retweet ? ('RT @'+o.retweeted_screen_name+' '+item.retweeted_status.text) : item.text; // avoid '...' in long retweets
       o.tweet_text = $([linkURLs(o.tweet_raw_text, o.entities)]).linkUser().linkHash()[0];
