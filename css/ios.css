@@ -1,6 +1,5 @@
 /* Imports */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
     padding-top: 0px;
@@ -45,7 +44,7 @@ img.photo { border: 1px solid black; }
 }
 
 /* fonts */
-body {font-family: "Open Sans", Verdana; font-weight: 400; font-size:10pt; color: #111;}
+body {font-family: Verdana; font-size:10pt; color: #111;}
 h1, h2, h3, h4, h5 {font-family: "Open Sans", "Trebuchet MS", sans-serif; font-weight: 600; color: #000; margin-bottom: 0.2em;}
 h1 {font-size: 26pt;}
 h2 {font-size: 20pt;}
