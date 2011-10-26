@@ -7,13 +7,13 @@ body {
     margin-top: 1em;
     margin-bottom: 2em;
     text-align: center;
-    background-color: #ADA;
+    background-color: #ABA;
     background-image: url("/images/square_bg.png");
 }
 
 #content {
     background-color: #FFF;
-    width: 550px;
+    width: 575px;
     margin: 0px auto;
     text-align: left;
     padding: 0px;
