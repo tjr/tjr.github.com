@@ -17,7 +17,7 @@ body {
     margin: 0px auto;
     text-align: left;
     padding: 0px;
-    border: 0px solid #999;
+    border: 1px solid #999;
 }
 
 img.photo { border: 1px solid black; }
