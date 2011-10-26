@@ -33,6 +33,11 @@ img.photo { border: 1px solid black; }
   padding: 1em;
 }
 
+.twitter {
+  background-color: #BDB;
+  padding: 1em;
+}
+
 .peachpuff {
   background-color: #FFA45D;
   padding: 1em;
