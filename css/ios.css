@@ -13,11 +13,11 @@ body {
 
 #content {
     background-color: #FFF;
-    width: 500px;
+    width: 550px;
     margin: 0px auto;
     text-align: left;
     padding: 0px;
-    border: 0px solid #999;
+    border: 0px solid #9F9;
 }
 
 img.photo { border: 1px solid black; }
