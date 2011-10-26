@@ -170,7 +170,7 @@
       o.avatar_size = s.avatar_size;
       o.avatar_url = extract_avatar_url(item, (document.location.protocol === 'https:'));
       o.retweet = typeof(item.retweeted_status) != 'undefined';
-      o.tweet_time = parse_date(item.created_at);
+      o.tweet_time = ''; //parse_date(item.created_at);
       o.join_text = s.join_text == "auto" ? build_auto_join_text(item.text) : s.join_text;
       o.tweet_id = item.id_str;
       o.twitter_base = "http://"+s.twitter_url+"/";
