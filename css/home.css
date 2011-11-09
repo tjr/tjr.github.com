@@ -1,5 +1,6 @@
 /* Imports */
 @import url(http://fonts.googleapis.com/css?family=Andika);
+@import url(http://fonts.googleapis.com/css?family=Cabin:500);
 
 body {
     padding-top: 0px;
@@ -13,7 +14,7 @@ body {
 
 #content {
     background-color: #FFF;
-    width: 675px;
+    width: 650px;
     margin: 0px auto;
     text-align: left;
     padding: 0px;
@@ -50,7 +51,7 @@ img.photo { border: 1px solid black; }
 
 /* fonts */
 body {font-family: Verdana; font-size:10pt; color: #111;}
-h1, h2, h3, h4, h5 {font-family: "Andika", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
+h1, h2, h3, h4, h5 {font-family: "Cabin", "Andika", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
 h1 {font-size: 26pt;}
 h2 {font-size: 20pt;}
 h3 {font-size: 16pt;}
