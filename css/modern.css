@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Amaranth:700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700);
 
 img.photo { border: 3px solid black; margin: 6px; margin-left: 24px; margin-right: 10px; }
 body {
@@ -39,7 +39,7 @@ li.entries {
 
 /* fonts */
 body {font-family: Verdana; font-size:10pt; color: #333;}
-h1, h2, h3, h4, h5 {font-family: 'Amaranth', 'Trebuchet MS', sans-serif; color: #000;}
+h1, h2, h3, h4, h5 {font-family: 'PT Sans Narrow', 'Trebuchet MS', sans-serif; color: #000;}
 h1 {font-size: 24pt;}
 h2 {font-size: 20pt;}
 h3 {font-size: 16pt;}
