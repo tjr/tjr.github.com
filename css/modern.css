@@ -5,13 +5,13 @@ body {
      padding-top: 10px;
      padding-bottom: 20px;
      text-align: center;
-     background-color: #ABB;
+     background-color: #9AA;
      background-image: url("/images/square_bg.png");
 }
 
 #content {
 	 background-color: #FFF;
-	 width: 650px;
+	 width: 500px;
 	 margin: 0px auto;
 	 text-align: left;
 	 padding: 25px;
