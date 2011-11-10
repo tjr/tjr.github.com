@@ -42,38 +42,49 @@ College</a>.
 </p>
 </div>
 
-<h3>iOS Applications</h3>
+<h2>Latest Weblog Entries</h2>
+
+<ul>
+{% for post in site.posts limit: 3 %}
+<li><a href="{{post.url}}">{{post.title}}</a> (<em>{{post.date | date_to_long_string}}</em>)</li>
+{% endfor %}
+</ul>
+
+<p>
+<a href="/weblog/">More...</a>
+
+<h2>iOS Applications</h2>
 <ul>
 <li><a href="/software/lets-decide">Let's Decide</a></li>
 <li><a href="http://itunes.apple.com/us/app/music-measurement/id305144557?mt=8">Music Measurement</a></li>
 </ul>
 
-<h3>Open Source</h3>
+<h2>Open Source</h2>
 <ul>
 <li><a href="http://www.gnu.org/software/gnu-c-manual/">The GNU C Reference Manual</a></li>
 <li><a href="http://github.com/tjr/">GitHub repository</a></li>
 </ul>
 
-<h3>Music Projects</h3>
+<h2>Music Projects</h2>
 <ul>
 <li><a href="http://cdbaby.com/cd/trevisr2">Believing Side of Life</a></li>
 <li><a href="http://cdbaby.com/cd/trevisr3">Flow</a></li>
 <li><a href="http://cdbaby.com/cd/trevisr">Walking in the Light</a></li>
 </ul>
 
-<h3>Writing</h3>
+<h2>Writing</h2>
 <ul>
 <li><a href="/writing/being-at-the-bottom-of-things">Being at the Bottom of Things</a></li>
 <li><a href="/writing/can-free-software-be-profitable">Can Free Software Be Profitable?</a></li>
 <li><a href="/writing/tutti-frutti-ice-cream">In Search of Tutti Frutti Ice Cream</a></li>
 </ul>
 
-<h3>Photography</h3>
+<h2>Photography</h2>
 <ul>
 <li><a href="http://flickr.com/photos/trothwell">Flickr photo stream</a></li>
 </ul>
 
-<h3>Web Projects</h3>
+<h2>Web Projects</h2>
 <ul>
 <li><a href="http://www.raisingabordercollie.com/">RaisingABorderCollie.com</a></li>
 </ul>
