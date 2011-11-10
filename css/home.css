@@ -1,5 +1,4 @@
 /* Imports */
-@import url(http://fonts.googleapis.com/css?family=Andika);
 @import url(http://fonts.googleapis.com/css?family=Lato:700);
 
 body {
@@ -50,8 +49,8 @@ img.photo { border: 1px solid black; }
 }
 
 /* fonts */
-body {font-family: Georgia, Verdana; font-size:10pt; color: #111;}
-h1, h2, h3, h4, h5 {font-family: "Lato", "Andika", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
+body {font-family: Verdana; font-size:10pt; color: #111;}
+h1, h2, h3, h4, h5 {font-family: "Lato", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
 h1 {font-size: 26pt;}
 h2 {font-size: 20pt;}
 h3 {font-size: 16pt;}
