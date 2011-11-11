@@ -8,9 +8,13 @@
 <body>
 <div id="content">
 
+<div class="white">
 <h1>{{ page.title }}</h1>
 <p>
-<a href="/">Home</a> : <a href="/weblog/">Weblog</a> : {{ page.date | date_to_long_string }}
+a <a href="/weblog/">weblog</a> entry by <a href="/">Trevis Rothwell</a>
+
+<div class="insertbox">
+{{ page.date | date_to_long_string }}
 :
 {% if page.previous %} 
         <a rel="prev" href="{{ page.previous.url }}">&larr; Older</a>
@@ -21,15 +25,22 @@
     {% if page.next %} 
         <a rel="next" href="{{ page.next.url }}">Newer &rarr;</a>
     {% endif %}
-<hr>
+</div>
 
 <div id="blogcontent">
 {{ content }}
 </div>
 
-<hr>
+</div>
 
-<i><a href="mailto:tjr@acm.org">tjr@acm.org</a></i>
+<div class="powderblue">
+<p>
+<b>Contact</b>: <a href="mailto:tjr@acm.org">tjr@acm.org</a> :
+
+<a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x03B7725C092D4D37">public key</a>
+</p>
+</div>
+
 
 </div>
 </body>

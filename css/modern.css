@@ -27,6 +27,31 @@ body {
   text-align: left;
 }
 
+insertbox {
+  background-color: #CCC;
+  padding: 1em;
+}
+
+.powderblue {
+  background-color: #BBB;
+  padding: 1em;
+}
+
+.twitter {
+  background-color: #BDB;
+  padding: 1em;
+}
+
+.peachpuff {
+  background-color: #FFA45D;
+  padding: 1em;
+}
+
+.white {
+  background-color: white;
+  padding: 2em;
+}
+
 div.nav {
   background-color: #AACCEE;
   border: 1px solid #444;
