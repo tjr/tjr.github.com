@@ -27,7 +27,7 @@ body {
   text-align: left;
 }
 
-/insertbox {
+.insertbox {
   background-color: #CCC;
   padding: 1em;
 }
