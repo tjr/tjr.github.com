@@ -51,7 +51,7 @@ img.photo { border: 1px solid black; }
 /* fonts */
 body {font-family: Verdana; font-size:10pt; color: #111;}
 h1, h2, h3, h4, h5 {font-family: "Lato", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
-h1 {font-size: 24pt;}
+h1 {font-size: 24pt; margin-bottom: 0.5em;}
 h2 {font-size: 16pt;}
 h3 {font-size: 14pt;}
 h4 {font-size: 12pt;}
