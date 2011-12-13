@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-  <meta charset="utf-8"/>
-  <title>Cedar Rapids Online</title>
-  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+    <title>Cedar Rapids Online - a CherryPy web application</title>
+    <link rel="stylesheet" href="/css/ios.css" media="all" title="Default" charset="utf-8">
 </head>
+
 <body>
-    <h2>Cedar Rapids Online</h2>
-<p><a href="/">Home</a> : <a href="/software/">Software</a> : Cedar Rapids Online</p>
+<div id="content">
+
+<div class="white">
+<h1>Cedar Rapids Online</h1>
+
+<p>
+
+a web application by <a href="/">Trevis Rothwell</a>
+</p>
+
 <hr>
 
     <a href="http://picasaweb.google.com/lh/photo/1oP34MQeXoF6KDHG3dmrrQ?feat=embedwebsite"><img src="http://lh4.ggpht.com/_IsIl4HvOgJw/R3bgPQ_05AI/AAAAAAAAA4g/PtgjABVNHak/s288/downtown-cedar-rapids-05.jpg" class="photo" align="right"/></a>
 
-<h3>Quick Links</h3>
+<h2>Quick Links</h2>
 <ul>
 <li><a href="http://github.com/tjr/CedarRapidsOnline">Get the source code</a></li>
 </ul>
@@ -44,7 +51,7 @@ The remainder of this document explains the software architecture and some desig
 from the point of view of getting ready for real users.
 
 
-<h3>Design Goals</h3>
+<h2>Design Goals</h2>
 
 <p>
 This project is a traditional online learning community website, with the target audience
@@ -61,9 +68,9 @@ of residents and potential future residents of Cedar Rapids, Iowa.  The key feat
 Apart from building the software, this project also requires magnet content in the form
 of articles (ideally with some pertinent photography).
 
-<h3>Implementation</h3>
+<h2>Implementation</h2>
 
-<h4>The Big Picture</h4>
+<h3>The Big Picture</h3>
 
 <ul>
 <li>The web site is served simply by the built-in CherryPy web server. If this ever proves
@@ -77,7 +84,7 @@ relatively small amounts of HTML directly in Python.</li>
 </ul>
 
 
-<h4>The User Interface</h4>
+<h3>The User Interface</h3>
 
 <ul>
 
@@ -163,7 +170,7 @@ relatively small amounts of HTML directly in Python.</li>
 
 </ul>
 
-<h3>Data Model</h3>
+<h2>Data Model</h2>
 
 <p>
 There are five tables in the data model:
@@ -189,7 +196,7 @@ The SQL tables are written in PostgreSQL format, and are viewable (and documente
 more detail) in the <a href="http://github.com/tjr/CedarRapidsOnline/blob/master/sql/crdb2.sql">
 code repository</a>.
 
-<h3>Future Directions</h3>
+<h2>Future Directions</h2>
 
 <p>
 The existing design should be a fairly robust online learning community system. This
@@ -197,7 +204,7 @@ is not a research project; online communities have existed since the mid-1990's,
 much has been tried and either proven successful or failed.  Any changes that need to be
 made in this particular online community will have to be determined based on usage.
 
-<h3>License</h3>
+<h2>License</h2>
 
 <p>
 The software is licensed under the
@@ -206,7 +213,7 @@ The software is licensed under the
 <p>
 <img src="/images/agpl.png">
 
-<h3>References</h3>
+<h2>References</h2>
 
 <ul>
 <li><a href="http://philip.greenspun.com/seia/">Software Engineering for Internet
@@ -216,9 +223,17 @@ Applications</a></li>
 </ul>
 
 
-<br clear=right>
-<hr>
-<i><a href="/">tjr@csta.acm.org</a></i>
+</div>
+
+<div class="powderblue">
+<p>
+<b>Contact</b>: <a href="mailto:tjr@acm.org">tjr@acm.org</a>
+
+</p>
+</div>
+
+</div>
 </body>
 </html>
+
 
