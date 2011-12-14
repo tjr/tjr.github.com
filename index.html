@@ -60,7 +60,9 @@ from <a href="http://www.cornellcollege.edu/">Cornell College</a>.
 
 <ul>
 {% for post in site.posts limit: 4 %}
+{% unless post.category == "research" %}
 <li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endunless %}
 {% endfor %}
 </ul>
 
