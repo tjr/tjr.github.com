@@ -1,0 +1,53 @@
+/* Imports */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: #9B9;
+    background-image: url("/images/ravenna.png");
+}
+
+#content {
+    background-color: #FFF;
+    width: 575px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 0px;
+    border: 1px solid #999;
+}
+
+img.photo { border: 1px solid black; }
+
+
+.insertbox {
+  background-color: #CCC;
+  padding: 1em;
+}
+
+.powderblue {
+  background-color: #BBB;
+  padding: 1em;
+}
+
+.peachpuff {
+  background-color: #FFA45D;
+  padding: 1em;
+}
+
+.white {
+  background-color: white;
+  padding: 2em;
+}
+
+/* fonts */
+body {font-family: Verdana; font-size:10pt; color: #111;}
+h1, h2, h3, h4, h5 {font-family: "Open Sans", "Trebuchet MS", sans-serif; font-weight: 600; color: #000; margin-bottom: 0.2em;}
+h1 {font-size: 26pt;}
+h2 {font-size: 20pt;}
+h3 {font-size: 16pt;}
+h4 {font-size: 14pt;}
+h5 {font-size: 12pt;}
