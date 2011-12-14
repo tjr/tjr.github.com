@@ -31,6 +31,7 @@ body {
 .insertbox {
   background-color: #CCC;
   padding: 1em;
+  border: 1px solid #555;
 }
 
 .powderblue {
