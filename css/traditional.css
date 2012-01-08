@@ -1,6 +1,8 @@
 body {
      padding-left: 8%;
      padding-right: 8%;
+     padding-top: 4%;
+     padding-bottom: 4%;
 }
 
 img.photo { border: 1px solid black; }
