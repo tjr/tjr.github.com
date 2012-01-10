@@ -7,9 +7,9 @@ body {
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
 
-h1 { font-size: 85%; }
-h2 { font-size: 85%; }
-h3 { font-size: 85%; }
-h4 { font-size: 85%; }
-h5 { font-size: 85%; }
-h6 { font-size: 85%; }
+h1 { font-size: 20pt; }
+h2 { font-size: 16pt; }
+h3 { font-size: 14pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 10pt; }
+h6 { font-size: 10pt; }
