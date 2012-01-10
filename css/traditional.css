@@ -6,3 +6,10 @@ body {
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
+
+h1 { font-size: 85%; }
+h2 { font-size: 85%; }
+h3 { font-size: 85%; }
+h4 { font-size: 85%; }
+h5 { font-size: 85%; }
+h6 { font-size: 85%; }
