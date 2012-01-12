@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Noticia+Text);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 body {
      padding-left: 5%;
@@ -10,9 +11,9 @@ body {
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
 
-h1 { font-size: 20pt; }
-h2 { font-size: 16pt; }
-h3 { font-size: 14pt; }
-h4 { font-size: 12pt; }
-h5 { font-size: 10pt; }
-h6 { font-size: 10pt; }
+h1 { font-size: 28pt; font-family: 'Montserrat', sans-serif; }
+h2 { font-size: 24pt; font-family: 'Montserrat', sans-serif; }
+h3 { font-size: 20pt; font-family: 'Montserrat', sans-serif; }
+h4 { font-size: 18pt; font-family: 'Montserrat', sans-serif; }
+h5 { font-size: 16pt; font-family: 'Montserrat', sans-serif; }
+h6 { font-size: 14pt; font-family: 'Montserrat', sans-serif; }
