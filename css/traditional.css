@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Noticia+Text);
 @import url(http://fonts.googleapis.com/css?family=Varela);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body {
      padding-left: 5%;
@@ -17,3 +18,10 @@ eh3 { font-size: 14pt; }
 eh4 { font-size: 12pt; }
 eh5 { font-size: 10pt; }
 eh6 { font-size: 10pt; }
+
+h1 { font-family: "Ubuntu"; }
+h2 { font-family: "Ubuntu"; }
+h3 { font-family: "Ubuntu"; }
+h4 { font-size: 12pt; }
+h5 { font-size: 10pt; }
+h6 { font-size: 10pt; }
