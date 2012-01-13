@@ -44,7 +44,7 @@ p {padding-bottom: 1em; padding-top: 1em;}
 }
 
 /* fonts */
-body {font-family: 'Noticia Text', Verdana; font-size:10pt; color: #111;}
+body {font-family: 'Noticia Text', Verdana; font-size:12pt; color: #111;}
 h1, h2, h3, h4, h5 {font-family: "Indie Flower", "Trebuchet MS", sans-serif; color: #000; margin-bottom: 0.2em;}
 h1 {font-size: 36pt; text-decoration: underline;}
 h2 {font-size: 28pt;}
