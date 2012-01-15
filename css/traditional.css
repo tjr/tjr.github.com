@@ -2,11 +2,15 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
 
 body {
-     padding-left: 5%;
-     padding-right: 5%;
+     padding-left: 10%;
+     padding-right: 10%;
      padding-top: 1%;
      padding-bottom: 4%;
      font-family: 'Noticia Text', serif;
+
+  width: 700px;
+  margin: 0px auto;
+  text-align: left;
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
