@@ -15,7 +15,7 @@ body {
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
 
-p.googlead { float: right; padding: 3px 3px 0 7px; }
+p.googlead { float: right; padding: 0px 3px 0 7px; }
 
 eh1 { font-size: 20pt; }
 eh2 { font-size: 16pt; }
