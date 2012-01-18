@@ -1,33 +1,34 @@
-@import url(http://fonts.googleapis.com/css?family=Noticia+Text);
+/*@import url(http://fonts.googleapis.com/css?family=Noticia+Text);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
+*/
 
 body {
-     padding-left: 10%;
-     padding-right: 10%;
+     padding-left: 8%;
+     padding-right: 8%;
      padding-top: 2em;
      padding-bottom: 4%;
-     font-family: 'Noticia Text', serif;
+     ffont-family: 'Noticia Text', serif;
 
-  width: 750px;
-  margin: 0px auto;
-  text-align: left;
+  wwidth: 750px;
+  mmargin: 0px auto;
+  ttext-align: left;
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
 
 p.googlead { float: right; margin-left: 8px; margin-bottom: 8px; }
 
-eh1 { font-size: 20pt; }
-eh2 { font-size: 16pt; }
-eh3 { font-size: 14pt; }
-eh4 { font-size: 12pt; }
-eh5 { font-size: 10pt; }
-eh6 { font-size: 10pt; }
+h1 { font-size: 20pt; }
+h2 { font-size: 16pt; }
+h3 { font-size: 14pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 10pt; }
+h6 { font-size: 10pt; }
 
-h1 { font-family: "Ubuntu"; font-weight: 500;}
-h2 { font-family: "Ubuntu"; font-weight: 500;}
-h3 { font-family: "Ubuntu"; font-weight: 500;}
-h4 { font-family: "Ubuntu"; font-weight: 500;}
-h5 { font-family: "Ubuntu"; font-weight: 500;}
-h6 { font-family: "Ubuntu"; font-weight: 500;}
+eh1 { font-family: "Ubuntu"; font-weight: 500;}
+eh2 { font-family: "Ubuntu"; font-weight: 500;}
+eh3 { font-family: "Ubuntu"; font-weight: 500;}
+eh4 { font-family: "Ubuntu"; font-weight: 500;}
+eh5 { font-family: "Ubuntu"; font-weight: 500;}
+eh6 { font-family: "Ubuntu"; font-weight: 500;}
 
