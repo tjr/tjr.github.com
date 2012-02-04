@@ -28,9 +28,9 @@ I shortly dove in and <a href="/software/cedar-rapids-online">tried
 building some database-backed web sites of my own</a>, more or less
 following along with
 Philip's <a href="http://philip.greenspun.com/seia/">curriculum for
-his class at MIT</a>. I was pleased with what I had learned, but was
-aware that my self-taught understanding of the database side of things
-was somewhat superficial.
+his semester-long class at MIT</a>. I was pleased with what I had
+learned, but was aware that my self-taught understanding of the
+database side of things was somewhat superficial.
 
 <p>
 In January 2012, I had opportunity to take a three-day (all-day)
@@ -76,7 +76,7 @@ through <i>all</i> of the material in class, even if it appeared too
 boring or too challenging from a distance, prompted me to learn things
 that I had never bothered to learn before.
 
-<h2>Are Relational Database Systems Still Useful?</h2>
+<h2>But Are Relational Database Systems Still Useful?</h2>
 <p>
 On Tuesday afternoon, database expert
 <a href="http://en.wikipedia.org/wiki/Michael_Stonebraker">Michael
@@ -88,8 +88,22 @@ might not really be what you want to use.
 Modern database usage can be divided into three general areas: online
 transaction processing, data warehousing, and a variety of other
 specialized niche uses.  Online transaction processing demands high
-availabilty and fast performance. Data warehousing demands huge
-amounts of storage space.
+availabilty and fast performance on short, simple queries. Data
+warehousing demands huge amounts of storage space and running complex
+queries. Quantitative analysis (such as that done on stock market
+numbers) demands access to data more like a two-dimensional array
+than rows of columns in a traditional database.
+
+<p>
+Systems like Oracle and MySQL can be used to model the data in all of
+these situations, but they aren't optimized for any of them. Instead,
+if your application needs more than Oracle can muster, it is better to
+use specialized database systems: <a href="http://voltdb.com/">VoltDB</a>
+is optimized for online transaction processing, and works as much as
+75x faster than Oracle. <a href="http://www.vertica.com/">Vertica</a>
+provides a 25x performance boost over Oracle for data warehousing
+applications. For array-based processing,
+<a href="http://www.scidb.org/">SciDB</a> offers superior performance.
 
 <h2>Additional Topics</h2>
 <p>
@@ -106,7 +120,8 @@ full-time.
 
 <p>
 Philip asked, why would you want to work at a poorly-funded startup,
-always wondering how much longer money will last? Wouldn't it be
+working potentially very long hours and always wondering when the horizon
+of money is going to run out? Wouldn't it be
 better to get a job at a well-funded company and work on your product
 idea in your free time? If your project takes off, then wonderful,
 but if not, you haven't put yourself at financial risk.
@@ -115,6 +130,21 @@ but if not, you haven't put yourself at financial risk.
 I'm sure there are pros and cons to both approaches, but for folks
 with families and other responsibilities, maintaining relatively
 secure income may be the better way to go.
+
+<p>
+What about deciding which technologies to learn? All other things being
+equal, it may be better to develop experience on expensive proprietary
+technology than on freely-available technology: if a company has the
+money to pay for the proprietary technology, then (ostensibly) they also
+have the money to pay you well. Many proprietary software vendors offer
+free demos; download the demo, build something with the software, and
+add your newly-acquired skill to your resume.
+
+<p>
+But even more important than having a laundry list of technologies on
+your resume is being able to list projects completed. Being able to point
+to a software product (or a distinct sub-component of one) and say "I built
+that" is a strong indicator of engineering ability.
 
 <h2>Outside of the Class</h2>
 <p>
@@ -167,3 +197,8 @@ as well: if a good educator has taken the time to write a good book on a topic
 that you wish to learn more about, then <i>read the book</i>. Sure, take the class
 as well if you like, but squeeze every last drop of knowledge out of the book
 that you can.
+
+<h2>Further Reading</h2>
+<ul>
+<li><a href="http://blogs.law.harvard.edu/philg/2012/02/02/funny-things-that-happened-in-our-rdbms-lab-course/">Philip's summary of the class</a></li>
+</ul>
