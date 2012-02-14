@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
 */
 
-body {
+bbody {
      padding-left: 6%;
      padding-right: 6%;
      padding-top: 1.5em;
@@ -15,6 +15,8 @@ body {
   text-align: left;
 */
 }
+
+body {margin-left: 3em; margin-right: 3m;}
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
 
