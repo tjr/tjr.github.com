@@ -29,11 +29,11 @@ img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
 
 p.googlead { float: right; margin-left: 8px; margin-bottom: 8px; }
 
-h1 { font-size: 20pt; color: #002060;}
-h2 { font-size: 16pt; color: #002060;}
-h3 { font-size: 14pt; color: #002060;}
-h4 { font-size: 12pt; color: #002060;}
-h5 { font-size: 10pt; color: #002060;}
+h1 { font-size: 18pt; color: #002060;}
+h2 { font-size: 14pt; color: #002060;}
+h3 { font-size: 12pt; color: #002060;}
+h4 { font-size: 10pt; color: #002060;}
+h5 { font-size: 8pt; color: #002060;}
 h6 { font-size: 8pt; color: #002060;}
 
 ah1 { font-family: "Asap"; font-weight: 500;}
