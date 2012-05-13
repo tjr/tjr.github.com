@@ -3,8 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
 @import url(http://fonts.googleapis.com/css?family=Asap);
 */
-@import url(http://fonts.googleapis.com/css?family=Fjord+One);
-
+@import url(http://fonts.googleapis.com/css?family=Convergence);
 bbody {
      padding-left: 6%;
      padding-right: 6%;
@@ -23,7 +22,7 @@ body {
      margin-right: 3.5em;
      margin-top: 1.2em;
      margin-bottom: 1.2em;
-     font-family: "Fjord One";
+     ffont-family: "Fjord One";
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
@@ -44,3 +43,4 @@ ah4 { font-family: "Asap"; font-weight: 500;}
 ah5 { font-family: "Asap"; font-weight: 500;}
 ah6 { font-family: "Asap"; font-weight: 500;}
 
+h1, h2, h3, h4, h5 { font-family: Convergence; }
