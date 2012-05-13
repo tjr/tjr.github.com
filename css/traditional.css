@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
 @import url(http://fonts.googleapis.com/css?family=Asap);
 */
-@import url(http://fonts.googleapis.com/css?family=Convergence);
+
 bbody {
      padding-left: 6%;
      padding-right: 6%;
@@ -42,5 +42,3 @@ ah3 { font-family: "Asap"; font-weight: 500;}
 ah4 { font-family: "Asap"; font-weight: 500;}
 ah5 { font-family: "Asap"; font-weight: 500;}
 ah6 { font-family: "Asap"; font-weight: 500;}
-
-h1, h2, h3, h4, h5 { font-family: Convergence; }
