@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
 @import url(http://fonts.googleapis.com/css?family=Asap);
 */
+@import url(http://fonts.googleapis.com/css?family=Fjord+One);
 
 bbody {
      padding-left: 6%;
@@ -22,7 +23,7 @@ body {
      margin-right: 3.5em;
      margin-top: 1.2em;
      margin-bottom: 1.2em;
-/*     font-family: Georgia, serif; */
+     font-family: "Fjord One";
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
