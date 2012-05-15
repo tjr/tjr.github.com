@@ -3,7 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
 @import url(http://fonts.googleapis.com/css?family=Asap);
 */
-@import url(http://fonts.googleapis.com/css?family=Cabin:600);
 
 bbody {
      padding-left: 6%;
@@ -23,7 +22,6 @@ body {
      margin-right: 3.5em;
      margin-top: 1.2em;
      margin-bottom: 1.2em;
-     font-family: Georgia;
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
@@ -36,6 +34,13 @@ h3 { font-size: 16pt;}
 h4 { font-size: 14pt;}
 h5 { font-size: 12pt;}
 h6 { font-size: 10pt;}
+
+h1 { font-size: 20pt;}
+h2 { font-size: 16pt;}
+h3 { font-size: 14pt;}
+h4 { font-size: 12pt;}
+h5 { font-size: 10pt;}
+h6 { font-size: 8pt;}
 
 h1, h2, h3, h4, h5, h6 {font-family: Cabin; }
 
