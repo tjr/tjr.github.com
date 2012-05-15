@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://www.trevisrothwell.com/</loc>
-<lastmod>2011-12-19</lastmod>
+<lastmod>2012-5-15</lastmod>
 <changefreq>weekly</changefreq>
 </url>
 <url>
 <loc>http://www.trevisrothwell.com/writing/</loc>
-<lastmod>2011-12-19</lastmod>
+<lastmod>2012-5-15</lastmod>
+<changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.trevisrothwell.com/writing/tutti-frutti-ice-cream</loc>
+<lastmod>2012-5-15</lastmod>
 <changefreq>weekly</changefreq>
 </url>
 <url>
 <loc>http://www.trevisrothwell.com/software/</loc>
-<lastmod>2011-12-19</lastmod>
+<lastmod>2012-5-15</lastmod>
 <changefreq>weekly</changefreq>
 </url>
 </urlset>
