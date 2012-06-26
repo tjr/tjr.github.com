@@ -1,0 +1,168 @@
+<html>
+<head>
+    <title>Is Software Engineering?</title>
+    <link rel="stylesheet" href="/css/traditional.css" media="all" title="Default" charset="utf-8">
+</head>
+
+<body>
+
+<h1>Is Software Engineering?</h1>
+
+<p>
+<a href="/">Home</a> : <a href="/software/">Software Development</a> by Trevis Rothwell, June 2012
+</p>
+<hr>
+
+<a href="http://www.flickr.com/photos/trothwell/5186818879/" title="IMG_5621 by trothwell, on Flickr"><img src="http://farm2.staticflickr.com/1277/5186818879_945d78932f_m.jpg" width="240" height="160" alt="IMG_5621" align="right" class="photo"></a>
+
+<p>
+One of the many frequent debates amongst software practitioners is that of, what
+do we call what we do? Is it computer science? Is it programming? Is it software
+engineering? Is it art? Is it craft? Is it digital cuisine?
+
+<p>
+I have come to think that any of these terms (and more) could conceivably apply
+to some aspect of software development. When we are waxing theoretical and doing
+hardcore algorithms analysis, perhaps we are computer scientists. When we are
+taking an existing software design (written by ourselves, or by someone else)
+and coding it up, perhaps we are programmers. When we are chopping bytes into
+nibbles and bits and tossing them into a frying pan, perhaps we are chefs.
+
+<p>
+But what of engineering? Civil engineering that produces suspension bridges
+and skyscrapers involves intense planning, stress-testing, and certified
+professional engineers staking their reputation on signing off that the
+work is good.
+
+<p>
+Has software development matured to the point where
+we could with a straight face deem what we do to be engineering? I believe,
+in some contexts, it has.
+
+<h3>Serious Software Makes Serious Demands</h3>
+
+<p>
+In their
+<a href="http://www.amazon.com/gp/product/0646458418/ref=as_li_ss_tl?ie=UTF8&tag=trevrothswebl-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0646458418">Software Architecture Primer</a><img src="http://www.assoc-amazon.com/e/ir?t=trevrothswebl-20&l=as2&o=1&a=0646458418" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />,
+authors John Reekie and Rohan McAdam make the case that not all software projects
+require the same level of scrutiny, no more than all physical construction
+projects do. If you're building a dog house, it may suffice to build it all off
+the top of your head, sawing wood into approximately-correct dimensions and
+hammering it together. A typical dog house simply does not need to endure
+much physical stress.
+
+<p>
+If you're building a house for people, then you enter into a whole new world
+of building things in accordance with housing code, and, housing code aside,
+common sense tells you that a 1500-square-foot residence is going to demand
+more planning and excellence of workmanship than a 5-square-foot dog house.
+
+<p>
+It is similar with software. If you're making a
+<a href="/software/almond-emulator/">cheesy entertainment app for
+the iPhone</a>, nobody really cares if it's poorly designed, unmaintainable,
+or flat-out doesn't work. At most, these issues could be a minor annoyance.
+
+<p>
+If you're building an email client, things get a little more serious. Users
+will depend on your software to perform a specific function, and while there
+are worse problems in life than undelivered mail, it makes sense that you
+would need to put more effort into making sure an email client works than
+a trivial mobile phone game.
+
+<p>
+What about software that runs financial institutions? It wouldn't be good if
+the money in your account just disappeared. What about software that controls
+medical equipment? It wouldn't be good if a patient's oxygen supply just stopped.
+What about software that controls jumbo jets? It wouldn't be good if hundreds of
+passengers slammed into a mountain.
+
+<p>
+We can easily look at most software that we encounter and note firstly that
+it's not very robust, and secondly that it doesn't need to be. But there's also
+a lot of software that we might not even immediately think of as being software
+that we depend on to take care of our money and even our lives, and that software
+had better work right.
+
+<h2>Software Considerations in Airborne Systems and Equipment Certification</h2>
+
+<a href="http://www.flickr.com/photos/trothwell/5187410228/" title="IMG_5441 by trothwell, on Flickr"><img src="http://farm5.staticflickr.com/4145/5187410228_7915f4ce7a_m.jpg" width="240" height="160" alt="IMG_5441" align="right" class="photo"></a>
+
+<p>
+I have not worked on financial or medical software, but I have worked on
+projects for several aircraft. Most of those projects were implemented to the
+guidance demanded by the Federal Aviation Administration, that is, the
+document <a href="http://en.wikipedia.org/wiki/DO-178B">DO-178B</a>, Software
+Considerations in Airborne Systems and Equipment Certification.
+
+<p>
+DO-178B defines five levels of criticality of software that could be used
+onboard an aircraft; to summarize:
+
+<ul>
+<li>Level A: Software failure may cause a crash.</li>
+<li>Level B: Software failure reduces ability of the crew to operate the aircraft,
+may cause serious or fatal injuries among the passengers.</li>
+<li>Level C: Software failure may increase crew workload or cause passenger discomfort.</li>
+<li>Level D: Software failure may cause passenger inconvenience or routine flight plan change.</li>
+<li>Level E: Software failure has no impact on aircraft operation.</li>
+</ul>
+
+<p>
+For each level, DO-178B prescribes guidance on matters such as:
+
+<ul>
+<li>Planning documents: certification plan, software development plan,
+software verification plan, software configuration management plan, software
+quality assurance plan, system requirements, software requirements, software
+design standards, software coding standards.</li>
+<li>Development: software design description, source code (including how to
+write your code in a safe and maintainable way), traceability from software
+requirements to source code (or possibly to compiled object code).</li>
+<li>Verification: verification test cases, verification results, traceability
+from requirements to test cases, code coverage analysis to ensure that all
+lines of code are executed by the verification test cases.</li>
+</ul>
+
+<p>
+All of those things must be reviewed and signed off on by the development
+team, as well as reviewed by a third-party quality assurance process that
+audits the work to make sure that the planning was done in accordance with
+DO-178B and the implementation was done according to plan. The entire work
+must also be reviewed and signed off by a certification liaison working on
+behalf of the FAA.
+
+<p>
+Elsewhere in the process, tools used for development have to be checked out
+and approved for use; anything ranging from compilers to third-party libraries
+and operating systems to in-house software to assist with verification is
+subject to scrutiny.
+
+<p>
+For anything above Level E software, it's a pretty intense process, and the higher up you
+go in criticality, the more intense the process becomes, with stricter demands placed
+on your planning, implementation, and verification.
+
+<p>
+In short, avionics software is not a weekend hack.
+
+<h2>True Software Engineering?</h2>
+
+<p>
+With reams of requirements, bastions of verification procedures, reviews and
+sign-offs and audits at every step of the way, I feel comfortable deeming
+software projects such as avionics systems to be true software engineering.
+The end-product is not just a compiled application, but ample supporting
+documentation and assurance that the application behaves as intended.
+
+<p>
+Even at DO-178B Level A projects, with all of their intense demands, the
+resulting software is still not mathematically proven to be correct. But is
+anything in the real world of civil engineering mathematically proven to be
+correct?
+
+<hr>
+<i><a href="mailto:tjr@acm.org">tjr@acm.org</a></i>
+
+</body>
+</html>
