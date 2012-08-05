@@ -1,0 +1,23 @@
+--- 
+published: true
+meta: 
+  tumblr_trevisr_id: "26108258044"
+  tumblr_trevisr_permalink: http://trevisr.tumblr.com/post/26108258044/a-lesson-in-archiving-software-systems
+type: post
+status: publish
+tags: []
+
+title: A lesson in archiving software systems
+layout: post
+---
+<p>Prompted by various situations lining up, I spent some time last night dusting off my old <a href="http://www.trevisrothwell.com/software/cedar-rapids-online">CedarRapidsOnline.net</a> web service and trying to make it run again. Before shelving the source code a couple of years ago, I had taken time to document it, so it should be easy to get it running again. Let&#8217;s see&#8230; I need <a href="http://www.python.org/">Python</a>, <a href="http://www.postgresql.org">PostgreSQL</a>, and the Python packages <a href="http://www.pygresql.org/">PyGreSQL</a> and <a href="http://www.cherrypy.org/">CherryPy</a>. Sounds good.</p>
+
+<p>But wait, what version of Python? Does it matter? What version of PostgreSQL? Does it matter? What version of PyGreSQL and CherryPy?</p>
+
+<p>And oops, it seems PyGreSQL doesn&#8217;t build properly on my Mac, and there&#8217;s no precompiled binary available from the developer.</p>
+
+<p>After some poking around, I finally got all of the individual pieces in place, I think, but then the whole system doesn&#8217;t work! I must still not have something right, but I&#8217;m not sure what.</p>
+
+<p>Grr. I think I&#8217;ll just update it all to use <a href="http://wiki.python.org/moin/Python2orPython3">Python3</a> and newer versions of the other tools, rewriting from scratch anything that I need to.</p>
+
+<p>Lesson learned: document not only the tools used to build the software system, but the versions of the tools, and, if at all possible, make an archive of the tools themselves in case you can&#8217;t download them again later&#8230;</p>
