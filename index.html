@@ -1,3 +1,8 @@
+---
+layout: home
+title: Trevis Rothwell's home page
+---
+
 <head>
 <title>Trevis Rothwell's home page</title>
 <link rel="stylesheet" href="/css/traditional.css" media="all" title="Default" charset="utf-8">
@@ -41,7 +46,16 @@ enjoyed some post-graduate academic refreshment at the
 <li><a href="http://itunes.apple.com/us/album/daylight-moon-single/id489451410">Daylight Moon</a> single by
 Bill Johnson. Also <a href="http://www.amazon.com/Daylight-Moon-Single/dp/B006LZ3L2W/">available on Amazon</a>.
 (I played piano on this recording.)</li>
-<li>There might be something new on my <a href="http://blog.trevisrothwell.com/">weblog</a>.</li>
+</ul>
+
+<h2>Latest Weblog Entries</h2>
+
+<ul>
+{% for post in site.posts limit: 4 %}
+{% unless post.category == "research" %}
+<li><a href="{{post.url}}">{{post.title}}</a></li>
+{% endunless %}
+{% endfor %}
 </ul>
 
 <h2>Elsewhere on the Web</h2>
