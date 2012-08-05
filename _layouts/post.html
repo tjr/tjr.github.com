@@ -4,18 +4,20 @@ layout: default
 <html>
 
 <head>
-<title>{{ page.title }}</title>
+<title>Trevis Rothwell's weblog - {{ page.title }}</title>
 <link rel="stylesheet" href="/css/traditional.css" media="all" title="Default" charset="utf-8">
 </head>
 
 <body>
 <div id="content">
 
-<h1>{{ page.title }}</h1>
+<h1>Trevis Rothwell's weblog</h1>
 
 <p>
 <a href="/">Home</a> : <a href="/blog/">Blog</a> : one entry from {{ page.date | date_to_long_string }}
 <hr>
+
+<h2>{{ page.title }}</h2>
 
 <div id="post">
 {{ content }}
