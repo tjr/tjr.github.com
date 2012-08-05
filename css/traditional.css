@@ -7,19 +7,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 */
 
-bbody {
-     padding-left: 6%;
-     padding-right: 6%;
-     padding-top: 1.5em;
-     padding-bottom: 1em;
-     /* font-family: 'Noticia Text', serif; */
 /*
-  width: 750px;
-  margin: 0px auto;
-  text-align: left;
-*/
-}
-
 body {
      margin-left: 3.5em;
      margin-right: 3.5em;
@@ -51,3 +39,26 @@ ah3 { font-family: "Asap"; font-weight: 500;}
 ah4 { font-family: "Asap"; font-weight: 500;}
 ah5 { font-family: "Asap"; font-weight: 500;}
 ah6 { font-family: "Asap"; font-weight: 500;}
+*/
+
+/* new fonts and styles, august 2012 */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+body {
+     font-family: Georgia, 'Source Sans Pro', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+
+     text-align: center;
+}
+
+#content {
+	 width: 850px;
+	 margin: 0px auto;
+	 text-align: left;
+}
+
+h1 { color: #000; font-family: 'Source Sans Pro';}
+h2, h3, h4, h5 { font-family: 'Source Sans Pro'; font-weight: 600; color: rgb(68, 112, 154); }
+
+img.photo {border: 1px black solid; margin: 4px; }

@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+body {
+     font-family: Georgia, 'Source Sans Pro', sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+
+     text-align: center;
+}
+
+#content {
+	 width: 850px;
+	 margin: 0px auto;
+	 text-align: left;
+}
+
+h1 { color: #000; font-family: 'Source Sans Pro';}
+h2, h3, h4, h5 { font-family: 'Source Sans Pro'; font-weight: 600; color: rgb(68, 112, 154); }
+
+img.photo {border: 1px black solid; margin: 4px; }
