@@ -61,6 +61,6 @@ body {
 }
 
 h1 { color: #000; font-family: 'Source Sans Pro';}
-h2, h3, h4, h5 { font-family: 'Source Sans Pro'; font-weight: 600; color: rgb(68, 112, 154); }
+h2, h3, h4, h5 { font-family: 'Source Sans Pro'; font-weight: 600; color: rgb(68, 112, 154); color: rgb(60, 100, 120); }
 
 img.photo {border: 1px black solid; margin: 4px; }
