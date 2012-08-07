@@ -46,7 +46,8 @@ ah6 { font-family: "Asap"; font-weight: 500;}
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 body {
      font-family: Georgia, 'Source Sans Pro', sans-serif;
-     font-size: 16px;
+     font-size: 15px;
+     line-height: 150%;
      ffont-weight: 400;
 
      text-align: center;
