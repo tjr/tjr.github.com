@@ -56,7 +56,9 @@ body {
 #content {
 	 wwidth: 850px;
 	 mmax-width: 850px;
-	 margin: 0px auto;
+	 mmargin: 0px auto;
+	 margin-left: 3.5em;
+	 margin-right: 3.5em;
 	 text-align: left;
 }
 
