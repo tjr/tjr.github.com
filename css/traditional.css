@@ -7,12 +7,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 */
 
+@import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 
 body {
      margin-left: 3.5em;
      margin-right: 3.5em;
      margin-top: 1.2em;
      margin-bottom: 1.2em;
+     font-family: 'Sorts Mill Goudy';
+     font-size: 16pt;
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
