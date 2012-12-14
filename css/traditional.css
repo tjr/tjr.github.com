@@ -13,12 +13,14 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700);
 
+@import url(http://fonts.googleapis.com/css?family=Volkhov:400,700);
+
 body {
      margin-left: 4em;
      margin-right: 4em;
      margin-top: 1.5em;
      margin-bottom: 1.5em;
-     font-family: 'Lora';
+     font-family: 'Volkhov';
      font-size: 13pt;
 }
 
@@ -33,12 +35,12 @@ h4 { font-size: 12pt;}
 h5 { font-size: 10pt;}
 h6 { font-size: 8pt;}
 
-ah1 { font-family: "Droid Sans"; font-weight: 700;}
-ah2 { font-family: "Droid Sans"; font-weight: 700;}
-ah3 { font-family: "Droid Sans"; font-weight: 700;}
-ah4 { font-family: "Oxygen"; font-weight: 700;}
-ah5 { font-family: "Oxygen"; font-weight: 700;}
-ah6 { font-family: "Oxygen"; font-weight: 700;}
+h1 { font-family: "Volkhov"; font-weight: 700;}
+h2 { font-family: "Volkhov"; font-weight: 700;}
+h3 { font-family: "Volkhov"; font-weight: 700;}
+h4 { font-family: "Oxygen"; font-weight: 700;}
+h5 { font-family: "Oxygen"; font-weight: 700;}
+h6 { font-family: "Oxygen"; font-weight: 700;}
 
 
 /* new fonts and styles, august 2012 */
