@@ -9,13 +9,15 @@
 
 @import url(http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic);
 
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700);
+
 body {
      margin-left: 3.5em;
      margin-right: 3.5em;
      margin-top: 1.2em;
      margin-bottom: 1.2em;
-     font-family: 'Sorts Mill Goudy';
-     font-size: 14pt;
+     font-family: 'Lora';
+     font-size: 13pt;
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
