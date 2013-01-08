@@ -15,12 +15,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
 */
 
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 body {
      margin-left: 4em;
      margin-right: 4em;
      margin-top: 1.5em;
      margin-bottom: 1.5em;
-     font-family: Georgia;
+     font-family: 'Source Sans Pro';
      font-color: #222;
      color: #222;
 }
