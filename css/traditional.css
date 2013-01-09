@@ -4,8 +4,9 @@
 @import url(http://fonts.googleapis.com/css?family=Asap);
 */
 
+/*
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
-
+*/
 /*
 @import url(http://fonts.googleapis.com/css?family=Oxygen:700);
 
@@ -14,17 +15,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
 */
 
+/*
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+*/
 
 body {
      margin-left: 4em;
      margin-right: 4em;
      margin-top: 1.5em;
      margin-bottom: 1.5em;
-     font-family: 'Open Sans';
-     font-color: #222;
-     color: #222;
-     font-size: 12pt;
 }
 
 img.photo { border: 1px solid black; margin-left: 8px; margin-bottom: 8px;}
