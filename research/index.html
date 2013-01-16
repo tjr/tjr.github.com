@@ -17,6 +17,16 @@
 
 <a href="http://www.flickr.com/photos/trothwell/5187408482/" title="IMG_5423 by trothwell, on Flickr"><img src="http://farm2.static.flickr.com/1265/5187408482_c1b75e4f33_m.jpg" width="240" height="160" alt="IMG_5423" class="photo" align="right"/></a>
 <p>
+The goal of research in the natural sciences is to identify something
+in nature that presently is either understood poorly or not understood
+at all and discover more about how it works. The goal of research in
+computer science is to identify something that computer systems
+presently either do poorly or cannot do at all and come up with a way
+to make them do it. (We claim to already understand existing computer
+systems, and don't need to research how they work, though tht claim is
+debatable...)
+
+<p>
 My research plan for the indefinite future is to find ways to build
 computer systems that can approximate understanding of natural
 language. For example, consider:
@@ -35,22 +45,33 @@ executed brute-force word-for-word translation?</li>
 </ul>
 
 <p>
-Forms of such technology have existed for decades, but there's
-still lots of room for progress.
-
-<h2>Knowledge Representation</h2>
-
-<p>
-In order for a computer system to be able to compute anything, be it
-natural language or any other information, it has to have a formal
-model to represent the data. Internal formal models are probably not
-involved with how people naturally process information, but we need
-them to be able to program anything.
+Researchers have been working on these problems for decades, and
+most of the language processing tools that have made their way into
+the hands of the general public continue to demonstrate at best a
+superficial grasp of what people are actually talking about.
 
 <p>
-I suspect that really good data models of semantic information would
-be a key to getting computers to do any deep processing of natural
-language.
+The bottom line: programming computers to understand natural language
+is a tough problem, and there's plenty of worthwhile work left to do.
+
+<h2>Some Ideas</h2>
+
+<p>
+...that might be worth investigating...
+
+<ul>
+<li>It's fairly straightforward to program a computer system to grasp language
+within a particular narrow context. Could we design a way to extend computer
+systems with additional interchangable contexts?</li>
+<li>Given a strict definition of syntax for a language, it's a simple matter of
+programming for a computer system to be able to parse utterances in that language.
+The hard part is often dealing with utterances that stray away from entirely-correct
+syntax, as lots of real utterances spoken by real people tend to do.</li>
+<li>Even the language tools that only superficially process language (like most
+language translation systems) are fairly hefty applications that run on servers.
+Would it be useful to compact such systems into, say, tiny efficient C programs
+that could run directly on mobile devices?</li>
+</ul>
 
 <h2>Miscellaneous Research</h2>
 
