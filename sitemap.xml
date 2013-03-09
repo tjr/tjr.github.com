@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://www.trevisrothwell.com/</loc>
-<lastmod>2012-06-14T23:55:01+00:00</lastmod>
+<lastmod>2013-03-08T23:55:01+00:00</lastmod>
 <changefreq>weekly</changefreq>
 </url>
 <url>
@@ -22,6 +22,11 @@
 </url>
 <url>
 <loc>http://www.trevisrothwell.com/music/</loc>
+<lastmod>2012-06-14T23:55:01+00:00</lastmod>
+<changefreq>weekly</changefreq>
+</url>
+<url>
+<loc>http://www.trevisrothwell.com/research/</loc>
 <lastmod>2012-06-14T23:55:01+00:00</lastmod>
 <changefreq>weekly</changefreq>
 </url>
