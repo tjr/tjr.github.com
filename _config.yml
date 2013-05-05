@@ -1,2 +1,3 @@
-
+permalink: /old-blog/:year/:month/:title
+paginate: 3
 
