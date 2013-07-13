@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8"/>
+  <title>Audio Limiting</title>
+  <link rel="stylesheet" href="/site.css" media="all" title="Default" charset="utf-8"/>
+</head>
+<body>
+    <h2>Audio Limiting</h2>
+<p>
+some research notes prepared for the SFFC Sound Team by <a href="/">Trevis Rothwell</a>
+<hr>
+
+<h3>Problem Definition</h3>
+
+<p>
+The problem we are trying to solve here is that of, SFFC audio
+recordings are coming out much too quiet overall, both in an absolute
+sense (needing to crank the volume on the car stereo system to
+ridiculous levels) and when listened to side-by-side with comparable
+recordings from other ministries.
+
+<p>
+We want to increase the level of SFFC audio recordings without going
+overboard and introducing digital clipping.
+
+<h3>Where Are We At?</h3>
+
+<p>
+Here is a graphical representation of a wave file from a recent SFFC
+service, prepared using Audacity:
+
+<img src="/images/audio/sffc-audio-original.jpg">
+
+<p>
+[First, a few words about what exactly we're seeing. The waveform view
+in Audacity shows us the amplitude of the waveform on a scale from 0.0
+to +/- 1.0, where 0.0 is silent, and +/- 1.0 is as far away from
+silent as the sound can get without clipping.]
+
+<p>
+On Audacity's scale, we can see that the majority of the wave hovers
+around an amplitude of 0.3 or 0.4, with occasional bursts past
+0.5. (The strong wave elements at the beginning and end are the
+musical intro/outro tags, which appear to be more solidly around 0.5.)
+
+<h3>Where Do We Want to Go?</h3>
+
+<p>
+For comparison, here is a graphical representation of a wave file from
+the 2009 ministers' conference hosted by Kenneth Copeland Ministries:
+
+<img src="/images/audio/kcm-audio.jpg">
+
+<p>
+We see that this audio wave peaks out around 0.9 on the Audacity
+scale, and is frequently right up at that peak; the peaks aren't
+random bursts, and rarely does the wave drop below 0.5.
+
+<h3>Making Progress</h3>
+
+<p>
+I took an approximately two minute clip from the SFFC service above to work with
+for generating some samples. First, here is the clip in original form:
+
+<img src="/images/audio/sffc-audio-clip-original.jpg">
+
+<p>
+(It is more spaced out more horizontally, because we are looking at a shorter
+segment of time, but the amplitude is recognizable.)
+
+<h4>Raise the Amplitude and Apply a Limiter</h4>
+
+<p>
+Here's the same clip, boosted by approximately 8dB, with a soft limiter applied:
+
+<img src="/images/audio/sffc-audio-clip-with-limiter.jpg">
+
+<p>
+This looks a lot closer to the KCM audio clip. With some experimentation, we could
+determine exactly what decibel boost and limiter settings would give us optimal
+results. (I made a few attempts to come up with this sample; a few more would surely
+improve it, but I think the idea is clear enough.)
+
+<h4>Just Raise the Amplitude</h4>
+
+<p>
+Do we need to bother with a limiter? The original clip was quite low. We could
+probably just increase the recording level without introducing a limiter and
+see an improvement toward fixing the problem.
+
+<p>
+For comparison, here is the clip just boosted by approximately 8dB, with no
+limiter:
+
+<img src="/images/audio/sffc-audio-clip-plus8db.jpg">
+
+<p>
+Definitely an overall strong clip, but there's a lot of variance in
+the waveform level, including some high spots that are probably
+clipping. So maybe 8dB is too much; we could boost it by 6dB, perhaps,
+and get a stronger waveform without clipping. Having the limiter in
+place, though, would help us to maximize the level without going too
+high.
+
+<h4>What Does It Sound Like?</h4>
+
+<p>
+Here's the original sound clip:
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100837070"></iframe>
+
+<p>
+And here's the same clip with an 8dB boost run through a limiter:
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F100837241"></iframe>
+
+<h4>Tools Used</h4>
+
+<p>
+For this work, I used Pro Tools 10 to process the audio, specifically
+using the standard compressor/limiter plugin that comes with Pro Tools
+10. A higher-quality limiter plugin might offer superior results, though
+for one track of spoken word audio maybe nothing noticeable.
+
+<br clear=right>
+<hr>
+<i><a href="mailto:tjr@acm.org">tjr@acm.org</a></i>
+</body>
+</html>
